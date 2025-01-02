@@ -1,0 +1,1778 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="utf-8">
+	<title>EDOLGI.RU - сервис электронных услуг</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#000">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#000">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+		integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+	<link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/header.css">
+	<link rel="stylesheet" href="css/footer.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/media.css">
+
+</head>
+
+<body>
+
+	<div class="section-loader section-loader-bailiff">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+
+					<div class="loader-wrapper">
+
+						<div class="progress-timer">
+							<div class="circle">
+								<div class="circle__item">
+									<svg class="circle__spinner" viewBox="0 0 50 50">
+										<circle class="path" cx="25" cy="25" r="20" fill="none" stroke-width="6"></circle>
+									</svg>
+								</div>
+							</div>
+							<div class="timer"></div>
+						</div>
+
+						<div class="loader-wrapper__text">Идет поиск информации по начислению</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="search-hidden">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<div class="search-hidden-wrapper">
+
+						<div class="search-hidden-wrapper__title">
+							<h2>Поиск услуг</h2>
+
+							<a href="#" class="search-hidden-close">
+								<svg class="svg-icon search-hidden-close__icon">
+									<use xlink:href="img/sprite.svg#close"></use>
+								</svg>
+								<span class="search-hidden-close__text">Закрыть</span>
+							</a>
+						</div>
+
+
+						<form method="post" class="form-search form-search-modal">
+							<label>
+								<a href="#" class="search-icon">
+									<svg class="svg-icon">
+										<use xlink:href="img/sprite.svg#search"></use>
+									</svg>
+								</a>
+								<input type="text" placeholder="Поиск услуги">
+							</label>
+							<button type="submit" class="btn btn-accent">Поиск</button>
+							<div class="result-search-modal">
+								<h3>Мы нашли для вас следующие услуги:</h3>
+
+								<div class="list-result-search">
+									<a href="#" class="list-result-search__column">
+										<strong>ИНН: 7820036631</strong>
+										<span>Ростелеком : Вся Россия</span>
+									</a>
+									<a href="#" class="list-result-search__column">
+										<strong>ИНН: 7820036631</strong>
+										<span>ЖэК 01: Воронеж</span>
+									</a>
+									<a href="#" class="list-result-search__column">
+										<strong>ФССП</strong>
+										<span>Задолженности в ФССП по ФИО: Вся Россияя</span>
+									</a>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="mobile-menu">
+		<a href="#" class="mobile-menu__close">
+			<svg class="svg-icon">
+				<use xlink:href="img/sprite.svg#close"></use>
+			</svg>
+		</a>
+		<a href="index.html" class="logo">
+			<img src="img/logo-max.svg" alt="">
+		</a>
+
+		<ul class="menu-mobile my-ul">
+			<li>
+				<a href="#">Задолженности физических лиц</a>
+
+				<div class="submenu-mobile">
+					<a href="#" class="link-prev">
+						<span class="link-prev__icon"><svg class="svg-icon">
+								<use xlink:href="img/sprite.svg#arrow-left"></use>
+							</svg></span>
+						<span class="link-prev__text">Назад</span>
+					</a>
+					<ul class="submenu-mobile-list my-ul">
+						<li><a href="#">Проверка долгов по ФИО</a></li>
+						<li><a href="#">Долги по ИНН</a></li>
+						<li><a href="#">Долги по паспорту</a></li>
+						<li><a href="#">Долги по СНИЛС</a></li>
+						<li><a href="#">Долги у приставов ООО</a></li>
+						<li><a href="#">Долги у приставов по ИП</a></li>
+						<li><a href="#">Долги выава</a></li>
+					</ul>
+				</div>
+			</li>
+			<li>
+				<a href="#">Задолженности юридических лиц</a>
+
+				<div class="submenu-mobile">
+					<a href="#" class="link-prev">
+						<span class="link-prev__icon"><svg class="svg-icon">
+								<use xlink:href="img/sprite.svg#arrow-left"></use>
+							</svg></span>
+						<span class="link-prev__text">Назад</span>
+					</a>
+					<ul class="submenu-mobile-list my-ul">
+						<li><a href="#">Проверка долгов по ФИО</a></li>
+						<li><a href="#">Долги по ИНН</a></li>
+						<li><a href="#">Долги по паспорту</a></li>
+						<li><a href="#">Долги по СНИЛС</a></li>
+						<li><a href="#">Долги у приставов ООО</a></li>
+						<li><a href="#">Долги у приставов по ИП</a></li>
+						<li><a href="#">Долги выава</a></li>
+					</ul>
+				</div>
+			</li>
+			<li>
+				<a href="#">Задолженности физических лиц</a>
+
+				<div class="submenu-mobile">
+					<a href="#" class="link-prev">
+						<span class="link-prev__icon"><svg class="svg-icon">
+								<use xlink:href="img/sprite.svg#arrow-left"></use>
+							</svg></span>
+						<span class="link-prev__text">Назад</span>
+					</a>
+					<ul class="submenu-mobile-list my-ul">
+						<li><a href="#">Проверка долгов по ФИО</a></li>
+						<li><a href="#">Долги по ИНН</a></li>
+						<li><a href="#">Долги по паспорту</a></li>
+						<li><a href="#">Долги по СНИЛС</a></li>
+						<li><a href="#">Долги у приставов ООО</a></li>
+						<li><a href="#">Долги у приставов по ИП</a></li>
+						<li><a href="#">Долги выава</a></li>
+					</ul>
+				</div>
+			</li>
+			<li>
+				<a href="#">Задолженности физических лиц</a>
+
+				<div class="submenu-mobile">
+					<a href="#" class="link-prev">
+						<span class="link-prev__icon"><svg class="svg-icon">
+								<use xlink:href="img/sprite.svg#arrow-left"></use>
+							</svg></span>
+						<span class="link-prev__text">Назад</span>
+					</a>
+					<ul class="submenu-mobile-list my-ul">
+						<li><a href="#">Проверка долгов по ФИО</a></li>
+						<li><a href="#">Долги по ИНН</a></li>
+						<li><a href="#">Долги по паспорту</a></li>
+						<li><a href="#">Долги по СНИЛС</a></li>
+						<li><a href="#">Долги у приставов ООО</a></li>
+						<li><a href="#">Долги у приставов по ИП</a></li>
+						<li><a href="#">Долги выава</a></li>
+					</ul>
+				</div>
+			</li>
+			<li>
+				<a href="#">Задолженности физических лиц</a>
+
+				<div class="submenu-mobile">
+					<a href="#" class="link-prev">
+						<span class="link-prev__icon"><svg class="svg-icon">
+								<use xlink:href="img/sprite.svg#arrow-left"></use>
+							</svg></span>
+						<span class="link-prev__text">Назад</span>
+					</a>
+					<ul class="submenu-mobile-list my-ul">
+						<li><a href="#">Проверка долгов по ФИО</a></li>
+						<li><a href="#">Долги по ИНН</a></li>
+						<li><a href="#">Долги по паспорту</a></li>
+						<li><a href="#">Долги по СНИЛС</a></li>
+						<li><a href="#">Долги у приставов ООО</a></li>
+						<li><a href="#">Долги у приставов по ИП</a></li>
+						<li><a href="#">Долги выава</a></li>
+					</ul>
+				</div>
+			</li>
+			<li>
+				<a href="#">Задолженности физических лиц</a>
+
+				<div class="submenu-mobile">
+					<a href="#" class="link-prev">
+						<span class="link-prev__icon"><svg class="svg-icon">
+								<use xlink:href="img/sprite.svg#arrow-left"></use>
+							</svg></span>
+						<span class="link-prev__text">Назад</span>
+					</a>
+					<ul class="submenu-mobile-list my-ul">
+						<li><a href="#">Проверка долгов по ФИО</a></li>
+						<li><a href="#">Долги по ИНН</a></li>
+						<li><a href="#">Долги по паспорту</a></li>
+						<li><a href="#">Долги по СНИЛС</a></li>
+						<li><a href="#">Долги у приставов ООО</a></li>
+						<li><a href="#">Долги у приставов по ИП</a></li>
+						<li><a href="#">Долги выава</a></li>
+					</ul>
+				</div>
+			</li>
+		</ul>
+
+		<ul class="menu my-ul">
+			<li><a href="#" class="active">Долги по ФИО</a></li>
+			<li><a href="#">Штрафы ГИБДД</a></li>
+			<li><a href="#">Долги в ФНС</a></li>
+		</ul>
+
+		<div class="footer-box">
+			<div class="footer-box__title">наши контакты</div>
+			<div class="header-contacts">
+				<div class="header-contacts__icon">
+					<svg class="svg-icon">
+						<use xlink:href="img/sprite.svg#phone"></use>
+					</svg>
+				</div>
+				<div class="header-contacts__text">
+					<a href="tel:+74951234567" class="phone">+7 (495) 123-45-67</a>
+					<span>время работы с 9:00 до 21:00</span>
+				</div>
+			</div>
+
+			<div class="header-contacts">
+				<div class="header-contacts__icon">
+					<svg class="svg-icon">
+						<use xlink:href="img/sprite.svg#mail"></use>
+					</svg>
+				</div>
+				<div class="header-contacts__text">
+					<a href="mailto:support@edolgi.ru" target="_blank" class="phone">support@edolgi.ru</a>
+					<span>служба поддержки</span>
+				</div>
+			</div>
+
+			<div class="header-contacts">
+				<div class="header-contacts__icon">
+					<svg class="svg-icon">
+						<use xlink:href="img/sprite.svg#tg"></use>
+					</svg>
+				</div>
+				<div class="header-contacts__text">
+					<a href="https://telegram.im/@support-edolgi.ru" target="_blank" class="phone">@support-edolgi.ru</a>
+					<span>наш телеграмм канал</span>
+				</div>
+			</div>
+			<ul class="list-social my-ul">
+				<li><a href="#">
+						<svg class="svg-icon">
+							<use xlink:href="img/sprite.svg#ok"></use>
+						</svg>
+					</a></li>
+				<li><a href="#">
+						<svg class="svg-icon">
+							<use xlink:href="img/sprite.svg#youtube"></use>
+						</svg>
+					</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<header class="header-report">
+		<div class="container">
+			<div class="row align-items-center">
+				<div class="col-12 col-md-5">
+					<a href="index.html" class="logo">
+						<span class="logo-image"><img src="img/logo.svg" alt=""></span>
+						<span class="logo-text">
+							<span class="logo-title">EDolgi.ru</span>
+							<span class="logo-description">cервис электронных услуг </span>
+						</span>
+					</a>
+				</div>
+
+				<div class="col-12 col-md-7">
+					<div class="h1">Отчет №3324 проверка запрета на выезд из РФ</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<section class="page-report">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 col-md-4 col-lg-3">
+					<div class="report-sidebar">
+						<h3>Разделы</h3>
+
+						<ul class="category-report my-ul">
+							<li><a href="#report-section1" class="btn btn-accent go_to">Сводные данные</a></li>
+							<li><a href="#report-section2" class="btn btn-accent go_to">База ФССП</a></li>
+							<li><a href="#report-section3" class="btn btn-accent go_to">База ФНС</a></li>
+							<li><a href="#report-section4" class="btn btn-accent go_to">База ГИБДД</a></li>
+							<li><a href="#report-section5" class="btn btn-accent go_to">Итоговый отчет</a></li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="col-12 col-md-8 col-lg-9 mb-46">
+					<div class="report-box report-section">
+						<div class="report-box__head">
+							<div class="report-box__head-icon">
+								<svg class="svg-icon">
+									<use xlink:href="img/sprite.svg#user-icon">
+								</svg>
+							</div>
+							<div class="report-box__head-text">
+								<h3>Колесник Александр Анатольевич</h3>
+							</div>
+							<div class="date">Дата формирования: 14.02.2023</div>
+						</div>
+						<div class="report-box__body">
+							<ul class="list-information-company my-ul">
+								<li>
+									<div class="list-information-company__name">
+										<svg class="svg-icon">
+											<use xlink:href="img/sprite.svg#calendar">
+										</svg>
+										<p>Дата рождения</p>
+									</div>
+									<div class="list-information-company__text">
+										<p>16.04.1993</p>
+									</div>
+								</li>
+								<li>
+									<div class="list-information-company__name">
+										<svg class="svg-icon">
+											<use xlink:href="img/sprite.svg#location">
+										</svg>
+										<p>Выбранный регион</p>
+									</div>
+									<div class="list-information-company__text">
+										<p>Санкт Петербург</p>
+									</div>
+								</li>
+								<li>
+									<div class="list-information-company__name">
+										<svg class="svg-icon">
+											<use xlink:href="img/sprite.svg#hash">
+										</svg>
+										<p>СНИЛС</p>
+									</div>
+									<div class="list-information-company__text">
+										<p>654324****</p>
+									</div>
+								</li>
+								<li>
+									<div class="list-information-company__name">
+										<svg class="svg-icon">
+											<use xlink:href="img/sprite.svg#hash">
+										</svg>
+										<p>Паспорт</p>
+									</div>
+									<div class="list-information-company__text">
+										<p>34565625**</p>
+									</div>
+								</li>
+								<li>
+									<div class="list-information-company__name">
+										<svg class="svg-icon">
+											<use xlink:href="img/sprite.svg#hash">
+										</svg>
+										<p>ИНН</p>
+									</div>
+									<div class="list-information-company__text">
+										<p>214324*****</p>
+									</div>
+								</li>
+								<li>
+									<div class="list-information-company__name">
+										<svg class="svg-icon">
+											<use xlink:href="img/sprite.svg#hash">
+										</svg>
+										<p>СТС</p>
+									</div>
+									<div class="list-information-company__text">
+										<p>Не предоставленно</p>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-12">
+					<div class="report-box report-section" id="report-section1">
+						<div class="report-box__head">
+							<div class="report-box__head-icon">
+								<svg class="svg-icon">
+									<use xlink:href="img/sprite.svg#file2">
+								</svg>
+							</div>
+							<div class="report-box__head-text">
+								<h2>Сводные данные</h2>
+							</div>
+						</div>
+						<div class="report-box__body">
+							<ul class="list-information-company my-ul">
+								<li>
+									<div class="list-information-company__name">
+										<div class="icon-circe bg-red"></div>
+										<p>Задолженности ФССП</p>
+									</div>
+									<div class="list-information-company__text">
+										<p>476 616.76 ₽</p>
+									</div>
+								</li>
+								<li>
+									<div class="list-information-company__name">
+										<div class="icon-circe bg-green"></div>
+										<p>Задолженности ФНС</p>
+									</div>
+									<div class="list-information-company__text">
+										<p>Не найдено</p>
+									</div>
+								</li>
+								<li>
+									<div class="list-information-company__name">
+										<div class="icon-circe bg-green"></div>
+										<p>Задолженности ГИБДД</p>
+									</div>
+									<div class="list-information-company__text">
+										<p>Не предоставлено</p>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="report-box report-box-green report-section" id="report-section2">
+						<div class="report-box__head">
+							<div class="report-box__head-icon">
+								<svg class="svg-icon">
+									<use xlink:href="img/sprite.svg#file2">
+								</svg>
+							</div>
+							<div class="report-box__head-text">
+								<h2>База ФССП</h2>
+							</div>
+						</div>
+						<div class="report-box__body base-result-item">
+							<div class="base-result-item__text">
+								<h3>Неоплаченных задолженностей: 10, на сумму: 41 382.08 руб.</h3>
+								<div class="box-text">
+									<p>Оплатите все долги разом одним платежом, чек поступит на ваш E-mail</p>
+								</div>
+							</div>
+
+							<div class="btn-group">
+								<a href="#" class="btn btn-accent" data-toggle="modal" data-target="#modal1">Оплатить<strong>42 382.08
+										руб.</strong> </a>
+							</div>
+						</div>
+					</div>
+
+
+					<div class="accordion accordion-report accordion-table" id="accordionExample">
+						<div class="card">
+							<div class="card-header" id="headingOne">
+								<div data-toggle="collapse" class="card-header__title" data-target="#collapseOne" aria-expanded="true"
+									aria-controls="collapseOne">
+
+									<div class="card-header__name">Иные взыскания имущественного характера в пользу физических и
+										юридических лиц
+									</div>
+
+									<span>Найдено: 10</span>
+									<span>Сумма: 100 000 руб.</span>
+								</div>
+							</div>
+
+							<div id="collapseOne" class="collapse show" aria-labelledby="headingOne">
+								<div class="card-body">
+									<div class="table-responsive">
+										<table class="table table-result">
+											<thead class="thead">
+												<tr class="tr">
+													<td class="td-number">Номер дела и дата</td>
+													<td class="td-document">Документ</td>
+													<td class="td-office">Ведомство</td>
+													<td class="td-executive-doc">Исполнительный документ</td>
+													<td class="td-department">Отдел судебных приставов</td>
+													<td class="td-bailiff">Судебный пристав</td>
+													<td class="td-sum">Сумма к погашению</td>
+													<td class="td-pay">Оплатить</td>
+												</tr>
+											</thead>
+											<tbody class="tbody">
+												<tr class="tr">
+													<td class="td-number" data-table="Номер дела и дата">
+														<p>Колесник Александр Анатольевич
+															238900/22/14042-ИП</p><span>от 10.10.2022</span>
+													</td>
+													<td class="td-document" data-table="Документ">
+														<p>СНИЛС: <br>787***6865</p>
+														<a href="#" data-toggle="modal" data-target="#modal1"
+															class="text-decoration color-accent link">не
+															мой документ</a>
+													</td>
+													<td class="td-office" data-table="Ведомство">ФССП (Федеральная служба судебных приставов)</td>
+													<td class="td-executive-doc" data-table="Исполнительный документ">
+														Акт по делу об административном правонарушении от 24.05.2022 № 0321695310222052400008128
+														КОМИТЕТ
+														ПО ТРАНСПОРТУ 7830001067
+													</td>
+													<td class="td-department" data-table="Отдел судебных приставов">
+														Левобережный ОСП Невского р-на
+														192029, Россия, г. Санкт-Петербург, Обуховской обороны просп, 92 <br>
+														+7(812)318-21-44
+													</td>
+													<td class="td-bailiff" data-table="Судебный пристав">
+														<p>ШУБИНА Е. Ю.</p>
+														<a href="#" class="color-accent text-decoration">+7(812)318-20-01</a>
+													</td>
+													<td class="td-sum" data-table="Сумма к погашению">20 434.71 руб.</td>
+													<td class="td-pay">
+														<a href="#" class="link-pay color-accent d-none d-sm-block" data-toggle="modal"
+															data-target="#modal2">Оплатить</a>
+														<span>20 635,25 руб</span>
+													</td>
+													<td class="d-block d-sm-none w-100">
+														<a href="#" class="btn btn-accent btn-pay" data-toggle="modal"
+															data-target="#modal2">Оплатить</a>
+													</td>
+												</tr>
+												<tr class="tr">
+													<td class="td-number" data-table="Номер дела и дата">
+														<p>238900/22/14042-ИП</p><span>от 10.10.2022</span>
+													</td>
+													<td class="td-document" data-table="Документ">
+														<p>СНИЛС: <br>787***6865</p>
+													</td>
+													<td class="td-office" data-table="Ведомство">ФССП (Федеральная служба судебных приставов)
+													</td>
+													<td class="td-executive-doc" data-table="Исполнительный документ">
+														Акт по делу об административном правонарушении от 24.05.2022 № 0321695310222052400008128
+														КОМИТЕТ
+														ПО ТРАНСПОРТУ 7830001067
+													</td>
+													<td class="td-department" data-table="Отдел судебных приставов">
+														Левобережный ОСП Невского р-на
+														192029, Россия, г. Санкт-Петербург, Обуховской обороны просп, 92 <br>
+														+7(812)318-21-44
+													</td>
+													<td class="td-bailiff" data-table="Судебный пристав">
+														<p>ШУБИНА Е. Ю.</p>
+														<a href="#" class="color-accent text-decoration">+7(812)318-20-01</a>
+													</td>
+													<td class="td-sum" data-table="Сумма к погашению">20 434.71 руб.</td>
+													<td class="td-pay">
+														<a href="#" class="text-decoration color-accent link">Производство прекращено</a>
+														<span>20 635,25 руб</span>
+													</td>
+												</tr>
+												<tr class="tr">
+													<td class="td-number" data-table="Номер дела и дата">
+														<p>238900/22/14042-ИП</p><span>от 10.10.2022</span>
+													</td>
+													<td class="td-document" data-table="Документ">
+														<p>СНИЛС: <br>787***6865</p>
+														<a href="#" class="text-decoration color-accent link">не мой документ</a>
+													</td>
+													<td class="td-office" data-table="Ведомство">ФССП (Федеральная служба судебных приставов)</td>
+													<td class="td-executive-doc" data-table="Исполнительный документ">
+														Акт по делу об административном правонарушении от 24.05.2022 № 0321695310222052400008128
+														КОМИТЕТ
+														ПО ТРАНСПОРТУ 7830001067
+													</td>
+													<td class="td-department" data-table="Отдел судебных приставов">
+														Левобережный ОСП Невского р-на
+														192029, Россия, г. Санкт-Петербург, Обуховской обороны просп, 92 <br>
+														+7(812)318-21-44
+													</td>
+													<td class="td-bailiff" data-table="Судебный пристав">
+														<p>ШУБИНА Е. Ю.</p>
+														<a href="#" class="color-accent text-decoration">+7(812)318-20-01</a>
+													</td>
+													<td class="td-sum" data-table="Сумма к погашению">20 434.71 руб.</td>
+													<td class="td-pay">
+														<a href="#" class="link-pay color-accent d-none d-sm-block" data-toggle="modal"
+															data-target="#modal2">Оплатить</a>
+														<span>20 635,25 руб</span>
+													</td>
+													<td class="d-block d-sm-none w-100">
+														<a href="#" class="btn btn-accent btn-pay" data-toggle="modal"
+															data-target="#modal2">Оплатить</a>
+													</td>
+												</tr>
+												<tr class="tr">
+													<td class="td-number" data-table="Номер дела и дата">
+														<p>238900/22/14042-ИП</p><span>от 10.10.2022</span>
+													</td>
+													<td class="td-document" data-table="Документ">
+														<p>СНИЛС: <br>787***6865</p>
+														<a href="#" class="text-decoration color-accent link">не мой документ</a>
+													</td>
+													<td class="td-office" data-table="Ведомство">ФССП (Федеральная служба судебных приставов)</td>
+													<td class="td-executive-doc" data-table="Исполнительный документ">
+														Акт по делу об административном правонарушении от 24.05.2022 № 0321695310222052400008128
+														КОМИТЕТ
+														ПО ТРАНСПОРТУ 7830001067
+													</td>
+													<td class="td-department" data-table="Отдел судебных приставов">
+														Левобережный ОСП Невского р-на
+														192029, Россия, г. Санкт-Петербург, Обуховской обороны просп, 92 <br>
+														+7(812)318-21-44
+													</td>
+													<td class="td-bailiff" data-table="Судебный пристав">
+														<p>ШУБИНА Е. Ю.</p>
+														<a href="#" class="color-accent text-decoration">+7(812)318-20-01</a>
+													</td>
+													<td class="td-sum" data-table="Сумма к погашению">20 434.71 руб.</td>
+													<td class="td-pay">
+														<a href="#" class="link-pay color-accent d-none d-sm-block" data-toggle="modal"
+															data-target="#modal2">Оплатить</a>
+														<span>20 635,25 руб</span>
+													</td>
+													<td class="d-block d-sm-none w-100">
+														<a href="#" class="btn btn-accent btn-pay" data-toggle="modal"
+															data-target="#modal2">Оплатить</a>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="card">
+							<div class="card-header" id="headingTwo">
+								<div class="collapsed card-header__title" data-toggle="collapse" data-target="#collapseTwo"
+									aria-expanded="false" aria-controls="collapseTwo">
+									<div class="card-header__name">Иные взыскания имущественного характера в пользу физических и
+										юридических лиц
+									</div>
+
+									<span>Найдено: 10</span>
+								</div>
+							</div>
+							<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo">
+								<div class="card-body">
+									<div class="table-responsive">
+										<table class="table table-result">
+											<thead class="thead">
+												<tr class="tr">
+													<td class="td-number">Номер дела и дата</td>
+													<td class="td-document">Документ</td>
+													<td class="td-office">Ведомство</td>
+													<td class="td-executive-doc">Исполнительный документ</td>
+													<td class="td-department">Отдел судебных приставов</td>
+													<td class="td-bailiff">Судебный пристав</td>
+													<td class="td-sum">Сумма к погашению</td>
+													<td class="td-pay">Оплатить</td>
+												</tr>
+											</thead>
+											<tbody class="tbody">
+												<tr class="tr">
+													<td class="td-number" data-table="Номер дела и дата">
+														<p>Колесник Александр Анатольевич
+															238900/22/14042-ИП</p><span>от 10.10.2022</span>
+													</td>
+													<td class="td-document" data-table="Документ">
+														<p>СНИЛС: <br>787***6865</p>
+														<a href="#" data-toggle="modal" data-target="#modal1"
+															class="text-decoration color-accent link">не
+															мой документ</a>
+													</td>
+													<td class="td-office" data-table="Ведомство">ФССП (Федеральная служба судебных приставов)</td>
+													<td class="td-executive-doc" data-table="Исполнительный документ">
+														Акт по делу об административном правонарушении от 24.05.2022 № 0321695310222052400008128
+														КОМИТЕТ
+														ПО ТРАНСПОРТУ 7830001067
+													</td>
+													<td class="td-department" data-table="Отдел судебных приставов">
+														Левобережный ОСП Невского р-на
+														192029, Россия, г. Санкт-Петербург, Обуховской обороны просп, 92 <br>
+														+7(812)318-21-44
+													</td>
+													<td class="td-bailiff" data-table="Судебный пристав">
+														<p>ШУБИНА Е. Ю.</p>
+														<a href="#" class="color-accent text-decoration">+7(812)318-20-01</a>
+													</td>
+													<td class="td-sum" data-table="Сумма к погашению">20 434.71 руб.</td>
+													<td class="td-pay">
+														<a href="#" class="link-pay color-accent d-none d-sm-block" data-toggle="modal"
+															data-target="#modal2">Оплатить</a>
+														<span>20 635,25 руб</span>
+													</td>
+													<td class="d-block d-sm-none w-100">
+														<a href="#" class="btn btn-accent btn-pay" data-toggle="modal"
+															data-target="#modal2">Оплатить</a>
+													</td>
+												</tr>
+												<tr class="tr">
+													<td class="td-number" data-table="Номер дела и дата">
+														<p>238900/22/14042-ИП</p><span>от 10.10.2022</span>
+													</td>
+													<td class="td-document" data-table="Документ">
+														<p>СНИЛС: <br>787***6865</p>
+													</td>
+													<td class="td-office" data-table="Ведомство">ФССП (Федеральная служба судебных приставов)
+													</td>
+													<td class="td-executive-doc" data-table="Исполнительный документ">
+														Акт по делу об административном правонарушении от 24.05.2022 № 0321695310222052400008128
+														КОМИТЕТ
+														ПО ТРАНСПОРТУ 7830001067
+													</td>
+													<td class="td-department" data-table="Отдел судебных приставов">
+														Левобережный ОСП Невского р-на
+														192029, Россия, г. Санкт-Петербург, Обуховской обороны просп, 92 <br>
+														+7(812)318-21-44
+													</td>
+													<td class="td-bailiff" data-table="Судебный пристав">
+														<p>ШУБИНА Е. Ю.</p>
+														<a href="#" class="color-accent text-decoration">+7(812)318-20-01</a>
+													</td>
+													<td class="td-sum" data-table="Сумма к погашению">20 434.71 руб.</td>
+													<td class="td-pay">
+														<a href="#" class="text-decoration color-accent link">Производство прекращено</a>
+														<span>20 635,25 руб</span>
+													</td>
+												</tr>
+												<tr class="tr">
+													<td class="td-number" data-table="Номер дела и дата">
+														<p>238900/22/14042-ИП</p><span>от 10.10.2022</span>
+													</td>
+													<td class="td-document" data-table="Документ">
+														<p>СНИЛС: <br>787***6865</p>
+														<a href="#" class="text-decoration color-accent link">не мой документ</a>
+													</td>
+													<td class="td-office" data-table="Ведомство">ФССП (Федеральная служба судебных приставов)</td>
+													<td class="td-executive-doc" data-table="Исполнительный документ">
+														Акт по делу об административном правонарушении от 24.05.2022 № 0321695310222052400008128
+														КОМИТЕТ
+														ПО ТРАНСПОРТУ 7830001067
+													</td>
+													<td class="td-department" data-table="Отдел судебных приставов">
+														Левобережный ОСП Невского р-на
+														192029, Россия, г. Санкт-Петербург, Обуховской обороны просп, 92 <br>
+														+7(812)318-21-44
+													</td>
+													<td class="td-bailiff" data-table="Судебный пристав">
+														<p>ШУБИНА Е. Ю.</p>
+														<a href="#" class="color-accent text-decoration">+7(812)318-20-01</a>
+													</td>
+													<td class="td-sum" data-table="Сумма к погашению">20 434.71 руб.</td>
+													<td class="td-pay">
+														<a href="#" class="link-pay color-accent d-none d-sm-block" data-toggle="modal"
+															data-target="#modal2">Оплатить</a>
+														<span>20 635,25 руб</span>
+													</td>
+													<td class="d-block d-sm-none w-100">
+														<a href="#" class="btn btn-accent btn-pay" data-toggle="modal"
+															data-target="#modal2">Оплатить</a>
+													</td>
+												</tr>
+												<tr class="tr">
+													<td class="td-number" data-table="Номер дела и дата">
+														<p>238900/22/14042-ИП</p><span>от 10.10.2022</span>
+													</td>
+													<td class="td-document" data-table="Документ">
+														<p>СНИЛС: <br>787***6865</p>
+														<a href="#" class="text-decoration color-accent link">не мой документ</a>
+													</td>
+													<td class="td-office" data-table="Ведомство">ФССП (Федеральная служба судебных приставов)</td>
+													<td class="td-executive-doc" data-table="Исполнительный документ">
+														Акт по делу об административном правонарушении от 24.05.2022 № 0321695310222052400008128
+														КОМИТЕТ
+														ПО ТРАНСПОРТУ 7830001067
+													</td>
+													<td class="td-department" data-table="Отдел судебных приставов">
+														Левобережный ОСП Невского р-на
+														192029, Россия, г. Санкт-Петербург, Обуховской обороны просп, 92 <br>
+														+7(812)318-21-44
+													</td>
+													<td class="td-bailiff" data-table="Судебный пристав">
+														<p>ШУБИНА Е. Ю.</p>
+														<a href="#" class="color-accent text-decoration">+7(812)318-20-01</a>
+													</td>
+													<td class="td-sum" data-table="Сумма к погашению">20 434.71 руб.</td>
+													<td class="td-pay">
+														<a href="#" class="link-pay color-accent d-none d-sm-block" data-toggle="modal"
+															data-target="#modal2">Оплатить</a>
+														<span>20 635,25 руб</span>
+													</td>
+													<td class="d-block d-sm-none w-100">
+														<a href="#" class="btn btn-accent btn-pay" data-toggle="modal"
+															data-target="#modal2">Оплатить</a>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="report-box report-box-green report-section" id="report-section3">
+						<div class="report-box__head">
+							<div class="report-box__head-icon">
+								<svg class="svg-icon">
+									<use xlink:href="img/sprite.svg#file2">
+								</svg>
+							</div>
+							<div class="report-box__head-text">
+								<h2>База ФНС</h2>
+							</div>
+						</div>
+						<div class="report-box__body base-result-item">
+							<div class="base-result-item__text">
+								<h3>Неоплаченных задолженностей: 10, на сумму: 41 382.08 руб.</h3>
+								<div class="box-text">
+									<p>Оплатите все долги разом одним платежом, чек поступит на ваш E-mail</p>
+								</div>
+							</div>
+
+							<div class="btn-group">
+								<a href="#" class="btn btn-accent" data-toggle="modal" data-target="#modal1">Оплатить<strong>42 382.08
+										руб.</strong> </a>
+							</div>
+						</div>
+					</div>
+					<div class="accordion accordion-report accordion-table" id="accordionExample2">
+						<div class="card">
+							<div class="card-header" id="heading3">
+								<div data-toggle="collapse" class="card-header__title" data-target="#collapse3" aria-expanded="true"
+									aria-controls="collapse3">
+
+									<div class="card-header__name">Иные взыскания имущественного характера в пользу физических и
+										юридических лиц
+									</div>
+
+									<span>Найдено: 10</span>
+									<span>Сумма: 100 000 руб.</span>
+								</div>
+							</div>
+
+							<div id="collapse3" class="collapse show" aria-labelledby="heading3">
+								<div class="card-body">
+									<div class="table-responsive">
+										<table class="table table-result">
+											<thead class="thead">
+												<tr class="tr">
+													<td class="td-number">Номер дела и дата</td>
+													<td class="td-document">Документ</td>
+													<td class="td-office">Ведомство</td>
+													<td class="td-executive-doc">Исполнительный документ</td>
+													<td class="td-department">Отдел судебных приставов</td>
+													<td class="td-bailiff">Судебный пристав</td>
+													<td class="td-sum">Сумма к погашению</td>
+													<td class="td-pay">Оплатить</td>
+												</tr>
+											</thead>
+											<tbody class="tbody">
+												<tr class="tr">
+													<td class="td-number" data-table="Номер дела и дата">
+														<p>Колесник Александр Анатольевич
+															238900/22/14042-ИП</p><span>от 10.10.2022</span>
+													</td>
+													<td class="td-document" data-table="Документ">
+														<p>СНИЛС: <br>787***6865</p>
+														<a href="#" data-toggle="modal" data-target="#modal1"
+															class="text-decoration color-accent link">не
+															мой документ</a>
+													</td>
+													<td class="td-office" data-table="Ведомство">ФССП (Федеральная служба судебных приставов)</td>
+													<td class="td-executive-doc" data-table="Исполнительный документ">
+														Акт по делу об административном правонарушении от 24.05.2022 № 0321695310222052400008128
+														КОМИТЕТ
+														ПО ТРАНСПОРТУ 7830001067
+													</td>
+													<td class="td-department" data-table="Отдел судебных приставов">
+														Левобережный ОСП Невского р-на
+														192029, Россия, г. Санкт-Петербург, Обуховской обороны просп, 92 <br>
+														+7(812)318-21-44
+													</td>
+													<td class="td-bailiff" data-table="Судебный пристав">
+														<p>ШУБИНА Е. Ю.</p>
+														<a href="#" class="color-accent text-decoration">+7(812)318-20-01</a>
+													</td>
+													<td class="td-sum" data-table="Сумма к погашению">20 434.71 руб.</td>
+													<td class="td-pay">
+														<a href="#" class="link-pay color-accent d-none d-sm-block" data-toggle="modal"
+															data-target="#modal2">Оплатить</a>
+														<span>20 635,25 руб</span>
+													</td>
+													<td class="d-block d-sm-none w-100">
+														<a href="#" class="btn btn-accent btn-pay" data-toggle="modal"
+															data-target="#modal2">Оплатить</a>
+													</td>
+												</tr>
+												<tr class="tr">
+													<td class="td-number" data-table="Номер дела и дата">
+														<p>238900/22/14042-ИП</p><span>от 10.10.2022</span>
+													</td>
+													<td class="td-document" data-table="Документ">
+														<p>СНИЛС: <br>787***6865</p>
+													</td>
+													<td class="td-office" data-table="Ведомство">ФССП (Федеральная служба судебных приставов)
+													</td>
+													<td class="td-executive-doc" data-table="Исполнительный документ">
+														Акт по делу об административном правонарушении от 24.05.2022 № 0321695310222052400008128
+														КОМИТЕТ
+														ПО ТРАНСПОРТУ 7830001067
+													</td>
+													<td class="td-department" data-table="Отдел судебных приставов">
+														Левобережный ОСП Невского р-на
+														192029, Россия, г. Санкт-Петербург, Обуховской обороны просп, 92 <br>
+														+7(812)318-21-44
+													</td>
+													<td class="td-bailiff" data-table="Судебный пристав">
+														<p>ШУБИНА Е. Ю.</p>
+														<a href="#" class="color-accent text-decoration">+7(812)318-20-01</a>
+													</td>
+													<td class="td-sum" data-table="Сумма к погашению">20 434.71 руб.</td>
+													<td class="td-pay">
+														<a href="#" class="text-decoration color-accent link">Производство прекращено</a>
+														<span>20 635,25 руб</span>
+													</td>
+												</tr>
+												<tr class="tr">
+													<td class="td-number" data-table="Номер дела и дата">
+														<p>238900/22/14042-ИП</p><span>от 10.10.2022</span>
+													</td>
+													<td class="td-document" data-table="Документ">
+														<p>СНИЛС: <br>787***6865</p>
+														<a href="#" class="text-decoration color-accent link">не мой документ</a>
+													</td>
+													<td class="td-office" data-table="Ведомство">ФССП (Федеральная служба судебных приставов)</td>
+													<td class="td-executive-doc" data-table="Исполнительный документ">
+														Акт по делу об административном правонарушении от 24.05.2022 № 0321695310222052400008128
+														КОМИТЕТ
+														ПО ТРАНСПОРТУ 7830001067
+													</td>
+													<td class="td-department" data-table="Отдел судебных приставов">
+														Левобережный ОСП Невского р-на
+														192029, Россия, г. Санкт-Петербург, Обуховской обороны просп, 92 <br>
+														+7(812)318-21-44
+													</td>
+													<td class="td-bailiff" data-table="Судебный пристав">
+														<p>ШУБИНА Е. Ю.</p>
+														<a href="#" class="color-accent text-decoration">+7(812)318-20-01</a>
+													</td>
+													<td class="td-sum" data-table="Сумма к погашению">20 434.71 руб.</td>
+													<td class="td-pay">
+														<a href="#" class="link-pay color-accent d-none d-sm-block" data-toggle="modal"
+															data-target="#modal2">Оплатить</a>
+														<span>20 635,25 руб</span>
+													</td>
+													<td class="d-block d-sm-none w-100">
+														<a href="#" class="btn btn-accent btn-pay" data-toggle="modal"
+															data-target="#modal2">Оплатить</a>
+													</td>
+												</tr>
+												<tr class="tr">
+													<td class="td-number" data-table="Номер дела и дата">
+														<p>238900/22/14042-ИП</p><span>от 10.10.2022</span>
+													</td>
+													<td class="td-document" data-table="Документ">
+														<p>СНИЛС: <br>787***6865</p>
+														<a href="#" class="text-decoration color-accent link">не мой документ</a>
+													</td>
+													<td class="td-office" data-table="Ведомство">ФССП (Федеральная служба судебных приставов)</td>
+													<td class="td-executive-doc" data-table="Исполнительный документ">
+														Акт по делу об административном правонарушении от 24.05.2022 № 0321695310222052400008128
+														КОМИТЕТ
+														ПО ТРАНСПОРТУ 7830001067
+													</td>
+													<td class="td-department" data-table="Отдел судебных приставов">
+														Левобережный ОСП Невского р-на
+														192029, Россия, г. Санкт-Петербург, Обуховской обороны просп, 92 <br>
+														+7(812)318-21-44
+													</td>
+													<td class="td-bailiff" data-table="Судебный пристав">
+														<p>ШУБИНА Е. Ю.</p>
+														<a href="#" class="color-accent text-decoration">+7(812)318-20-01</a>
+													</td>
+													<td class="td-sum" data-table="Сумма к погашению">20 434.71 руб.</td>
+													<td class="td-pay">
+														<a href="#" class="link-pay color-accent d-none d-sm-block" data-toggle="modal"
+															data-target="#modal2">Оплатить</a>
+														<span>20 635,25 руб</span>
+													</td>
+													<td class="d-block d-sm-none w-100">
+														<a href="#" class="btn btn-accent btn-pay" data-toggle="modal"
+															data-target="#modal2">Оплатить</a>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="card">
+							<div class="card-header" id="heading4">
+								<div class="collapsed card-header__title" data-toggle="collapse" data-target="#collapse4"
+									aria-expanded="false" aria-controls="collapse4">
+									<div class="card-header__name">Иные взыскания имущественного характера в пользу физических и
+										юридических лиц
+									</div>
+
+									<span>Найдено: 10</span>
+								</div>
+							</div>
+							<div id="collapse4" class="collapse" aria-labelledby="heading4">
+								<div class="card-body">
+									<div class="table-responsive">
+										<table class="table table-result">
+											<thead class="thead">
+												<tr class="tr">
+													<td class="td-number">Номер дела и дата</td>
+													<td class="td-document">Документ</td>
+													<td class="td-office">Ведомство</td>
+													<td class="td-executive-doc">Исполнительный документ</td>
+													<td class="td-department">Отдел судебных приставов</td>
+													<td class="td-bailiff">Судебный пристав</td>
+													<td class="td-sum">Сумма к погашению</td>
+													<td class="td-pay">Оплатить</td>
+												</tr>
+											</thead>
+											<tbody class="tbody">
+												<tr class="tr">
+													<td class="td-number" data-table="Номер дела и дата">
+														<p>Колесник Александр Анатольевич
+															238900/22/14042-ИП</p><span>от 10.10.2022</span>
+													</td>
+													<td class="td-document" data-table="Документ">
+														<p>СНИЛС: <br>787***6865</p>
+														<a href="#" data-toggle="modal" data-target="#modal1"
+															class="text-decoration color-accent link">не
+															мой документ</a>
+													</td>
+													<td class="td-office" data-table="Ведомство">ФССП (Федеральная служба судебных приставов)</td>
+													<td class="td-executive-doc" data-table="Исполнительный документ">
+														Акт по делу об административном правонарушении от 24.05.2022 № 0321695310222052400008128
+														КОМИТЕТ
+														ПО ТРАНСПОРТУ 7830001067
+													</td>
+													<td class="td-department" data-table="Отдел судебных приставов">
+														Левобережный ОСП Невского р-на
+														192029, Россия, г. Санкт-Петербург, Обуховской обороны просп, 92 <br>
+														+7(812)318-21-44
+													</td>
+													<td class="td-bailiff" data-table="Судебный пристав">
+														<p>ШУБИНА Е. Ю.</p>
+														<a href="#" class="color-accent text-decoration">+7(812)318-20-01</a>
+													</td>
+													<td class="td-sum" data-table="Сумма к погашению">20 434.71 руб.</td>
+													<td class="td-pay">
+														<a href="#" class="link-pay color-accent d-none d-sm-block" data-toggle="modal"
+															data-target="#modal2">Оплатить</a>
+														<span>20 635,25 руб</span>
+													</td>
+													<td class="d-block d-sm-none w-100">
+														<a href="#" class="btn btn-accent btn-pay" data-toggle="modal"
+															data-target="#modal2">Оплатить</a>
+													</td>
+												</tr>
+												<tr class="tr">
+													<td class="td-number" data-table="Номер дела и дата">
+														<p>238900/22/14042-ИП</p><span>от 10.10.2022</span>
+													</td>
+													<td class="td-document" data-table="Документ">
+														<p>СНИЛС: <br>787***6865</p>
+													</td>
+													<td class="td-office" data-table="Ведомство">ФССП (Федеральная служба судебных приставов)
+													</td>
+													<td class="td-executive-doc" data-table="Исполнительный документ">
+														Акт по делу об административном правонарушении от 24.05.2022 № 0321695310222052400008128
+														КОМИТЕТ
+														ПО ТРАНСПОРТУ 7830001067
+													</td>
+													<td class="td-department" data-table="Отдел судебных приставов">
+														Левобережный ОСП Невского р-на
+														192029, Россия, г. Санкт-Петербург, Обуховской обороны просп, 92 <br>
+														+7(812)318-21-44
+													</td>
+													<td class="td-bailiff" data-table="Судебный пристав">
+														<p>ШУБИНА Е. Ю.</p>
+														<a href="#" class="color-accent text-decoration">+7(812)318-20-01</a>
+													</td>
+													<td class="td-sum" data-table="Сумма к погашению">20 434.71 руб.</td>
+													<td class="td-pay">
+														<a href="#" class="text-decoration color-accent link">Производство прекращено</a>
+														<span>20 635,25 руб</span>
+													</td>
+												</tr>
+												<tr class="tr">
+													<td class="td-number" data-table="Номер дела и дата">
+														<p>238900/22/14042-ИП</p><span>от 10.10.2022</span>
+													</td>
+													<td class="td-document" data-table="Документ">
+														<p>СНИЛС: <br>787***6865</p>
+														<a href="#" class="text-decoration color-accent link">не мой документ</a>
+													</td>
+													<td class="td-office" data-table="Ведомство">ФССП (Федеральная служба судебных приставов)</td>
+													<td class="td-executive-doc" data-table="Исполнительный документ">
+														Акт по делу об административном правонарушении от 24.05.2022 № 0321695310222052400008128
+														КОМИТЕТ
+														ПО ТРАНСПОРТУ 7830001067
+													</td>
+													<td class="td-department" data-table="Отдел судебных приставов">
+														Левобережный ОСП Невского р-на
+														192029, Россия, г. Санкт-Петербург, Обуховской обороны просп, 92 <br>
+														+7(812)318-21-44
+													</td>
+													<td class="td-bailiff" data-table="Судебный пристав">
+														<p>ШУБИНА Е. Ю.</p>
+														<a href="#" class="color-accent text-decoration">+7(812)318-20-01</a>
+													</td>
+													<td class="td-sum" data-table="Сумма к погашению">20 434.71 руб.</td>
+													<td class="td-pay">
+														<a href="#" class="link-pay color-accent d-none d-sm-block" data-toggle="modal"
+															data-target="#modal2">Оплатить</a>
+														<span>20 635,25 руб</span>
+													</td>
+													<td class="d-block d-sm-none w-100">
+														<a href="#" class="btn btn-accent btn-pay" data-toggle="modal"
+															data-target="#modal2">Оплатить</a>
+													</td>
+												</tr>
+												<tr class="tr">
+													<td class="td-number" data-table="Номер дела и дата">
+														<p>238900/22/14042-ИП</p><span>от 10.10.2022</span>
+													</td>
+													<td class="td-document" data-table="Документ">
+														<p>СНИЛС: <br>787***6865</p>
+														<a href="#" class="text-decoration color-accent link">не мой документ</a>
+													</td>
+													<td class="td-office" data-table="Ведомство">ФССП (Федеральная служба судебных приставов)</td>
+													<td class="td-executive-doc" data-table="Исполнительный документ">
+														Акт по делу об административном правонарушении от 24.05.2022 № 0321695310222052400008128
+														КОМИТЕТ
+														ПО ТРАНСПОРТУ 7830001067
+													</td>
+													<td class="td-department" data-table="Отдел судебных приставов">
+														Левобережный ОСП Невского р-на
+														192029, Россия, г. Санкт-Петербург, Обуховской обороны просп, 92 <br>
+														+7(812)318-21-44
+													</td>
+													<td class="td-bailiff" data-table="Судебный пристав">
+														<p>ШУБИНА Е. Ю.</p>
+														<a href="#" class="color-accent text-decoration">+7(812)318-20-01</a>
+													</td>
+													<td class="td-sum" data-table="Сумма к погашению">20 434.71 руб.</td>
+													<td class="td-pay">
+														<a href="#" class="link-pay color-accent d-none d-sm-block" data-toggle="modal"
+															data-target="#modal2">Оплатить</a>
+														<span>20 635,25 руб</span>
+													</td>
+													<td class="d-block d-sm-none w-100">
+														<a href="#" class="btn btn-accent btn-pay" data-toggle="modal"
+															data-target="#modal2">Оплатить</a>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="report-box report-box-green report-section" id="report-section4">
+						<div class="report-box__head">
+							<div class="report-box__head-icon">
+								<svg class="svg-icon">
+									<use xlink:href="img/sprite.svg#file2">
+								</svg>
+							</div>
+							<div class="report-box__head-text">
+								<h2>База ГИБДД</h2>
+							</div>
+						</div>
+						<div class="report-box__body base-result-item">
+							<div class="base-result-item__text">
+								<h3>Неоплаченных задолженностей: 10, на сумму: 41 382.08 руб.</h3>
+								<div class="box-text">
+									<p>Оплатите все долги разом одним платежом, чек поступит на ваш E-mail</p>
+								</div>
+							</div>
+
+							<div class="btn-group">
+								<a href="#" class="btn btn-accent" data-toggle="modal" data-target="#modal1">Оплатить<strong>42 382.08
+										руб.</strong> </a>
+								<a href="#" class="btn btn-border-accent">Списать долги</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="accordion accordion-report accordion-table" id="accordionExample3">
+						<div class="card">
+							<div class="card-header" id="heading5">
+								<div data-toggle="collapse" class="card-header__title" data-target="#collapse5" aria-expanded="true"
+									aria-controls="collapse5">
+
+									<div class="card-header__name">Иные взыскания имущественного характера в пользу физических и
+										юридических лиц
+									</div>
+
+									<span>Найдено: 10</span>
+									<span>Сумма: 100 000 руб.</span>
+								</div>
+							</div>
+
+							<div id="collapse5" class="collapse show" aria-labelledby="heading5">
+								<div class="card-body">
+									<div class="table-responsive">
+										<table class="table table-result">
+											<thead class="thead">
+												<tr class="tr">
+													<td class="td-number">Номер дела и дата</td>
+													<td class="td-document">Документ</td>
+													<td class="td-office">Ведомство</td>
+													<td class="td-executive-doc">Исполнительный документ</td>
+													<td class="td-department">Отдел судебных приставов</td>
+													<td class="td-bailiff">Судебный пристав</td>
+													<td class="td-sum">Сумма к погашению</td>
+													<td class="td-pay">Оплатить</td>
+												</tr>
+											</thead>
+											<tbody class="tbody">
+												<tr class="tr">
+													<td class="td-number" data-table="Номер дела и дата">
+														<p>Колесник Александр Анатольевич
+															238900/22/14042-ИП</p><span>от 10.10.2022</span>
+													</td>
+													<td class="td-document" data-table="Документ">
+														<p>СНИЛС: <br>787***6865</p>
+														<a href="#" data-toggle="modal" data-target="#modal1"
+															class="text-decoration color-accent link">не
+															мой документ</a>
+													</td>
+													<td class="td-office" data-table="Ведомство">ФССП (Федеральная служба судебных приставов)</td>
+													<td class="td-executive-doc" data-table="Исполнительный документ">
+														Акт по делу об административном правонарушении от 24.05.2022 № 0321695310222052400008128
+														КОМИТЕТ
+														ПО ТРАНСПОРТУ 7830001067
+													</td>
+													<td class="td-department" data-table="Отдел судебных приставов">
+														Левобережный ОСП Невского р-на
+														192029, Россия, г. Санкт-Петербург, Обуховской обороны просп, 92 <br>
+														+7(812)318-21-44
+													</td>
+													<td class="td-bailiff" data-table="Судебный пристав">
+														<p>ШУБИНА Е. Ю.</p>
+														<a href="#" class="color-accent text-decoration">+7(812)318-20-01</a>
+													</td>
+													<td class="td-sum" data-table="Сумма к погашению">20 434.71 руб.</td>
+													<td class="td-pay">
+														<a href="#" class="link-pay color-accent d-none d-sm-block" data-toggle="modal"
+															data-target="#modal2">Оплатить</a>
+														<span>20 635,25 руб</span>
+													</td>
+													<td class="d-block d-sm-none w-100">
+														<a href="#" class="btn btn-accent btn-pay" data-toggle="modal"
+															data-target="#modal2">Оплатить</a>
+													</td>
+												</tr>
+												<tr class="tr">
+													<td class="td-number" data-table="Номер дела и дата">
+														<p>238900/22/14042-ИП</p><span>от 10.10.2022</span>
+													</td>
+													<td class="td-document" data-table="Документ">
+														<p>СНИЛС: <br>787***6865</p>
+													</td>
+													<td class="td-office" data-table="Ведомство">ФССП (Федеральная служба судебных приставов)
+													</td>
+													<td class="td-executive-doc" data-table="Исполнительный документ">
+														Акт по делу об административном правонарушении от 24.05.2022 № 0321695310222052400008128
+														КОМИТЕТ
+														ПО ТРАНСПОРТУ 7830001067
+													</td>
+													<td class="td-department" data-table="Отдел судебных приставов">
+														Левобережный ОСП Невского р-на
+														192029, Россия, г. Санкт-Петербург, Обуховской обороны просп, 92 <br>
+														+7(812)318-21-44
+													</td>
+													<td class="td-bailiff" data-table="Судебный пристав">
+														<p>ШУБИНА Е. Ю.</p>
+														<a href="#" class="color-accent text-decoration">+7(812)318-20-01</a>
+													</td>
+													<td class="td-sum" data-table="Сумма к погашению">20 434.71 руб.</td>
+													<td class="td-pay">
+														<a href="#" class="text-decoration color-accent link">Производство прекращено</a>
+														<span>20 635,25 руб</span>
+													</td>
+												</tr>
+												<tr class="tr">
+													<td class="td-number" data-table="Номер дела и дата">
+														<p>238900/22/14042-ИП</p><span>от 10.10.2022</span>
+													</td>
+													<td class="td-document" data-table="Документ">
+														<p>СНИЛС: <br>787***6865</p>
+														<a href="#" class="text-decoration color-accent link">не мой документ</a>
+													</td>
+													<td class="td-office" data-table="Ведомство">ФССП (Федеральная служба судебных приставов)</td>
+													<td class="td-executive-doc" data-table="Исполнительный документ">
+														Акт по делу об административном правонарушении от 24.05.2022 № 0321695310222052400008128
+														КОМИТЕТ
+														ПО ТРАНСПОРТУ 7830001067
+													</td>
+													<td class="td-department" data-table="Отдел судебных приставов">
+														Левобережный ОСП Невского р-на
+														192029, Россия, г. Санкт-Петербург, Обуховской обороны просп, 92 <br>
+														+7(812)318-21-44
+													</td>
+													<td class="td-bailiff" data-table="Судебный пристав">
+														<p>ШУБИНА Е. Ю.</p>
+														<a href="#" class="color-accent text-decoration">+7(812)318-20-01</a>
+													</td>
+													<td class="td-sum" data-table="Сумма к погашению">20 434.71 руб.</td>
+													<td class="td-pay">
+														<a href="#" class="link-pay color-accent d-none d-sm-block" data-toggle="modal"
+															data-target="#modal2">Оплатить</a>
+														<span>20 635,25 руб</span>
+													</td>
+													<td class="d-block d-sm-none w-100">
+														<a href="#" class="btn btn-accent btn-pay" data-toggle="modal"
+															data-target="#modal2">Оплатить</a>
+													</td>
+												</tr>
+												<tr class="tr">
+													<td class="td-number" data-table="Номер дела и дата">
+														<p>238900/22/14042-ИП</p><span>от 10.10.2022</span>
+													</td>
+													<td class="td-document" data-table="Документ">
+														<p>СНИЛС: <br>787***6865</p>
+														<a href="#" class="text-decoration color-accent link">не мой документ</a>
+													</td>
+													<td class="td-office" data-table="Ведомство">ФССП (Федеральная служба судебных приставов)</td>
+													<td class="td-executive-doc" data-table="Исполнительный документ">
+														Акт по делу об административном правонарушении от 24.05.2022 № 0321695310222052400008128
+														КОМИТЕТ
+														ПО ТРАНСПОРТУ 7830001067
+													</td>
+													<td class="td-department" data-table="Отдел судебных приставов">
+														Левобережный ОСП Невского р-на
+														192029, Россия, г. Санкт-Петербург, Обуховской обороны просп, 92 <br>
+														+7(812)318-21-44
+													</td>
+													<td class="td-bailiff" data-table="Судебный пристав">
+														<p>ШУБИНА Е. Ю.</p>
+														<a href="#" class="color-accent text-decoration">+7(812)318-20-01</a>
+													</td>
+													<td class="td-sum" data-table="Сумма к погашению">20 434.71 руб.</td>
+													<td class="td-pay">
+														<a href="#" class="link-pay color-accent d-none d-sm-block" data-toggle="modal"
+															data-target="#modal2">Оплатить</a>
+														<span>20 635,25 руб</span>
+													</td>
+													<td class="d-block d-sm-none w-100">
+														<a href="#" class="btn btn-accent btn-pay" data-toggle="modal"
+															data-target="#modal2">Оплатить</a>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="card">
+							<div class="card-header" id="heading6">
+								<div class="collapsed card-header__title" data-toggle="collapse" data-target="#collapse6"
+									aria-expanded="false" aria-controls="collapse6">
+									<div class="card-header__name">Иные взыскания имущественного характера в пользу физических и
+										юридических лиц
+									</div>
+
+									<span>Найдено: 10</span>
+								</div>
+							</div>
+							<div id="collapse6" class="collapse" aria-labelledby="heading6">
+								<div class="card-body">
+									<div class="table-responsive">
+										<table class="table table-result">
+											<thead class="thead">
+												<tr class="tr">
+													<td class="td-number">Номер дела и дата</td>
+													<td class="td-document">Документ</td>
+													<td class="td-office">Ведомство</td>
+													<td class="td-executive-doc">Исполнительный документ</td>
+													<td class="td-department">Отдел судебных приставов</td>
+													<td class="td-bailiff">Судебный пристав</td>
+													<td class="td-sum">Сумма к погашению</td>
+													<td class="td-pay">Оплатить</td>
+												</tr>
+											</thead>
+											<tbody class="tbody">
+												<tr class="tr">
+													<td class="td-number" data-table="Номер дела и дата">
+														<p>Колесник Александр Анатольевич
+															238900/22/14042-ИП</p><span>от 10.10.2022</span>
+													</td>
+													<td class="td-document" data-table="Документ">
+														<p>СНИЛС: <br>787***6865</p>
+														<a href="#" data-toggle="modal" data-target="#modal1"
+															class="text-decoration color-accent link">не
+															мой документ</a>
+													</td>
+													<td class="td-office" data-table="Ведомство">ФССП (Федеральная служба судебных приставов)</td>
+													<td class="td-executive-doc" data-table="Исполнительный документ">
+														Акт по делу об административном правонарушении от 24.05.2022 № 0321695310222052400008128
+														КОМИТЕТ
+														ПО ТРАНСПОРТУ 7830001067
+													</td>
+													<td class="td-department" data-table="Отдел судебных приставов">
+														Левобережный ОСП Невского р-на
+														192029, Россия, г. Санкт-Петербург, Обуховской обороны просп, 92 <br>
+														+7(812)318-21-44
+													</td>
+													<td class="td-bailiff" data-table="Судебный пристав">
+														<p>ШУБИНА Е. Ю.</p>
+														<a href="#" class="color-accent text-decoration">+7(812)318-20-01</a>
+													</td>
+													<td class="td-sum" data-table="Сумма к погашению">20 434.71 руб.</td>
+													<td class="td-pay">
+														<a href="#" class="link-pay color-accent d-none d-sm-block" data-toggle="modal"
+															data-target="#modal2">Оплатить</a>
+														<span>20 635,25 руб</span>
+													</td>
+													<td class="d-block d-sm-none w-100">
+														<a href="#" class="btn btn-accent btn-pay" data-toggle="modal"
+															data-target="#modal2">Оплатить</a>
+													</td>
+												</tr>
+												<tr class="tr">
+													<td class="td-number" data-table="Номер дела и дата">
+														<p>238900/22/14042-ИП</p><span>от 10.10.2022</span>
+													</td>
+													<td class="td-document" data-table="Документ">
+														<p>СНИЛС: <br>787***6865</p>
+													</td>
+													<td class="td-office" data-table="Ведомство">ФССП (Федеральная служба судебных приставов)
+													</td>
+													<td class="td-executive-doc" data-table="Исполнительный документ">
+														Акт по делу об административном правонарушении от 24.05.2022 № 0321695310222052400008128
+														КОМИТЕТ
+														ПО ТРАНСПОРТУ 7830001067
+													</td>
+													<td class="td-department" data-table="Отдел судебных приставов">
+														Левобережный ОСП Невского р-на
+														192029, Россия, г. Санкт-Петербург, Обуховской обороны просп, 92 <br>
+														+7(812)318-21-44
+													</td>
+													<td class="td-bailiff" data-table="Судебный пристав">
+														<p>ШУБИНА Е. Ю.</p>
+														<a href="#" class="color-accent text-decoration">+7(812)318-20-01</a>
+													</td>
+													<td class="td-sum" data-table="Сумма к погашению">20 434.71 руб.</td>
+													<td class="td-pay">
+														<a href="#" class="text-decoration color-accent link">Производство прекращено</a>
+														<span>20 635,25 руб</span>
+													</td>
+												</tr>
+												<tr class="tr">
+													<td class="td-number" data-table="Номер дела и дата">
+														<p>238900/22/14042-ИП</p><span>от 10.10.2022</span>
+													</td>
+													<td class="td-document" data-table="Документ">
+														<p>СНИЛС: <br>787***6865</p>
+														<a href="#" class="text-decoration color-accent link">не мой документ</a>
+													</td>
+													<td class="td-office" data-table="Ведомство">ФССП (Федеральная служба судебных приставов)</td>
+													<td class="td-executive-doc" data-table="Исполнительный документ">
+														Акт по делу об административном правонарушении от 24.05.2022 № 0321695310222052400008128
+														КОМИТЕТ
+														ПО ТРАНСПОРТУ 7830001067
+													</td>
+													<td class="td-department" data-table="Отдел судебных приставов">
+														Левобережный ОСП Невского р-на
+														192029, Россия, г. Санкт-Петербург, Обуховской обороны просп, 92 <br>
+														+7(812)318-21-44
+													</td>
+													<td class="td-bailiff" data-table="Судебный пристав">
+														<p>ШУБИНА Е. Ю.</p>
+														<a href="#" class="color-accent text-decoration">+7(812)318-20-01</a>
+													</td>
+													<td class="td-sum" data-table="Сумма к погашению">20 434.71 руб.</td>
+													<td class="td-pay">
+														<a href="#" class="link-pay color-accent d-none d-sm-block" data-toggle="modal"
+															data-target="#modal2">Оплатить</a>
+														<span>20 635,25 руб</span>
+													</td>
+													<td class="d-block d-sm-none w-100">
+														<a href="#" class="btn btn-accent btn-pay" data-toggle="modal"
+															data-target="#modal2">Оплатить</a>
+													</td>
+												</tr>
+												<tr class="tr">
+													<td class="td-number" data-table="Номер дела и дата">
+														<p>238900/22/14042-ИП</p><span>от 10.10.2022</span>
+													</td>
+													<td class="td-document" data-table="Документ">
+														<p>СНИЛС: <br>787***6865</p>
+														<a href="#" class="text-decoration color-accent link">не мой документ</a>
+													</td>
+													<td class="td-office" data-table="Ведомство">ФССП (Федеральная служба судебных приставов)</td>
+													<td class="td-executive-doc" data-table="Исполнительный документ">
+														Акт по делу об административном правонарушении от 24.05.2022 № 0321695310222052400008128
+														КОМИТЕТ
+														ПО ТРАНСПОРТУ 7830001067
+													</td>
+													<td class="td-department" data-table="Отдел судебных приставов">
+														Левобережный ОСП Невского р-на
+														192029, Россия, г. Санкт-Петербург, Обуховской обороны просп, 92 <br>
+														+7(812)318-21-44
+													</td>
+													<td class="td-bailiff" data-table="Судебный пристав">
+														<p>ШУБИНА Е. Ю.</p>
+														<a href="#" class="color-accent text-decoration">+7(812)318-20-01</a>
+													</td>
+													<td class="td-sum" data-table="Сумма к погашению">20 434.71 руб.</td>
+													<td class="td-pay">
+														<a href="#" class="link-pay color-accent d-none d-sm-block" data-toggle="modal"
+															data-target="#modal2">Оплатить</a>
+														<span>20 635,25 руб</span>
+													</td>
+													<td class="d-block d-sm-none w-100">
+														<a href="#" class="btn btn-accent btn-pay" data-toggle="modal"
+															data-target="#modal2">Оплатить</a>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="report-box report-section" id="report-section5">
+						<div class="report-box__head">
+							<div class="report-box__head-icon">
+								<svg class="svg-icon">
+									<use xlink:href="img/sprite.svg#clipboard">
+								</svg>
+							</div>
+							<div class="report-box__head-text">
+								<h2>Итоговая заключительная информация по запрету</h2>
+							</div>
+						</div>
+						<div class="report-box__body">
+							<div class="box-text">
+								<p>Согласно ответу от базы ФССП по запросу от 25.05.2023 года найдена задолженность на сумму 476616.76
+									руб. Согласно
+									Федеральному закону от 02.10.2007 N 229-ФЗ (ред. от 08.06.2020) "Об исполнительном производстве"
+									Статья 67, на граждан
+									может быть наложен запрет на выезд за границу если сумма задолжености по алиментам составляет свыше 10
+									000 руб, при иных
+									задолженностях (кредиты, ипотека, штрафы ГИБДД, исполнительные производства) свыше 30 000 руб.</p>
+
+								<p>Ваша задолженность свыше <span class="color-red">476 616.76 </span>руб., <span class="color-red">ваш
+										выезд может быть затруднен - рекомендуем оплатить
+										задолженности перед
+										выездом!</span></p>
+								<p>При превышении суммы задолженности свыше 10 000 руб (в случаях штрафов ГИБДД, кредитов и иных
+									задолженостях сумма свыше
+									30 000 руб) - выезд за границу может быть под запретом.</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="report-box__bottom search-base-wrapper__bottom">
+						<div class="box-text">
+							<p>ВАЖНО! С 01.10.2017 года на законодательном уровне закреплена сумма долга, которая ограничивает выезд
+								из страны- это 30
+								000 рублей. Об этом гласит пункт 1 статьи 67 закона «Об исполнительном производстве»</p>
+
+							<p>Для лиц, у которых в исполнительном документе содержатся требования об одном из следующих:</p>
+							<ul>
+								<li>взыскании алиментов,</li>
+								<li>возмещении вреда в связи со смертью кормильца,</li>
+								<li>возмещении вреда, причиненного здоровью,</li>
+								<li>имущественного ущерба и (или) морального вреда, причиненных преступлением</li>
+							</ul>
+
+							<p>Выезд из страны будет запрещён, если общий долг превышает 10 тысяч рублей</p>
+
+							<p>Если задолженности по базам ФССП, ФНС и вовсе отсутствуют, судебный пристав всё равно может наложить
+								запрет в случаях,
+								если:</p>
+							<ul>
+								<li>Ведется судебное дело,</li>
+								<li>Вы находитесь под следствием,</li>
+								<li>Вы работаете в государственном органе и других подобных ситуациях.</li>
+							</ul>
+							<p>!!! База по задолженностям обновляется в сроки от 14 до 30 рабочих дней. Если судебный пристав внёс какие-либо изменения
+							( наложил запрет или снял его) менее 30 дней назад, то информация может не успеть обновиться, и будет отличаться от
+							действительности.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+
+	<div class="modal fade modal-admin modal-information" id="alertModal" tabindex="-1" aria-labelledby="alertModalLabel"
+		aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="btn-close" data-dismiss="modal" aria-label="Close">
+						<svg class="svg-icon">
+							<use xlink:href="img/sprite.svg#close"></use>
+						</svg>
+					</button>
+				</div>
+				<div class="modal-body">
+					<div class="box-text">
+						<p>Как расшифровать номер исполнительного производства:
+						</p>
+						<ul>
+							<li><strong>123456</strong>/2022/77001-ИП - номер ИП</li>
+							<li>123456/<strong>2022</strong>/77001-ИП - год возбуждения ИП</li>
+							<li>123456/2022/<strong>77</strong>001-ИП - номер региона в котором возбуждено ИП</li>
+							<li>123456/2022/77<strong>001</strong>-ИП - номер структурного подразделения которое ведет ИП</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade modal-admin modal-information" id="complectionModal" tabindex="-1"
+		aria-labelledby="complectionModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="btn-close" data-dismiss="modal" aria-label="Close">
+						<svg class="svg-icon">
+							<use xlink:href="img/sprite.svg#close"></use>
+						</svg>
+					</button>
+				</div>
+				<div class="modal-body">
+					<div class="box-text">
+						<p>Наш сервис автоматически заполнит большую часть полей для того чтобы вам было удобно подать заявление в
+							электронном виде
+							удобнее!</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade modal-admin modal-information" id="exampleForm2" tabindex="-1"
+		aria-labelledby="exampleForm2Label" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+				<div class="modal-header">
+					<!-- <div class="modal-title">Пример заполнения жалобы</div> -->
+					<button type="button" class="btn-close" data-dismiss="modal" aria-label="Close">
+						<svg class="svg-icon">
+							<use xlink:href="img/sprite.svg#close"></use>
+						</svg>
+					</button>
+				</div>
+				<div class="modal-body">
+					<div class="box-text">
+						<p>Для того чтобы получить максимально подробный отчет нам требуется как можно больше данных. Паспорт,
+							СНИЛС, СТС, ИНН
+							Паспорт и СНИЛС нужен для проверки по базе ФССП на предмет задолженностей. <br>ИНН нужен для проверки
+							налоговых
+							задолженностей. <br>СТС нужен для проверки штрафов ГИБДД.</p>
+						<p>Только комплексная проверка может показать реальный результат.
+							Но вы вправе использовать проверку запрета без указания доп. параметров, в таком случае проверка будет
+							проведена по
+							банку данных по ФИО, региону и дате рождения.</p>
+						<p>Также дополнительно мы берем документы из базы ГИС ГМП и проводим
+							проверку по ним, это позволяем нам заполнить форму документов автоматически.</p>
+						<p>Мы ни храним и не передаем ваши
+							персональные данные, они используются строго для формирования отчета!</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade modal-admin modal-information" id="exampleForm" tabindex="-1"
+		aria-labelledby="exampleFormLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+				<div class="modal-header">
+					<div class="modal-title">Пример заполнения жалобы</div>
+					<button type="button" class="btn-close" data-dismiss="modal" aria-label="Close">
+						<svg class="svg-icon">
+							<use xlink:href="img/sprite.svg#close"></use>
+						</svg>
+					</button>
+				</div>
+				<div class="modal-body">
+					<div class="box-text">
+						<p>Меня зовут Иванов Иван Иванович, мой номер исполнительного документа 123456/23/77001-ИП. Мною была
+							оплачена
+							задолженность 12.04.2023 года, прошло более 2 -ух недель с момента оплаты но арест с моей банковской карты
+							не был снят.
+						</p>
+						<p>С учетом изложенного, прошу в соответствии с требованиями ст.ст. 123,124 Федерального закона от
+							02.10.2007 № 229-ФЗ
+							«Об исполнительном производстве» отменить постановление или признать незаконными действия бездействие)
+							должностного лица
+							службы судебных приставов</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="js/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+	<script src="js/timer.js"></script>
+	<script src="js/common.js"></script>
+
+</body>
+
+</html>

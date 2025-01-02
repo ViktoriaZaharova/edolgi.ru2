@@ -1,0 +1,1688 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>EDOLGI.RU - сервис электронных услуг</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:image" content="path/to/image.jpg">
+  <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+
+  <!-- Chrome, Firefox OS and Opera -->
+  <meta name="theme-color" content="#000">
+  <!-- Windows Phone -->
+  <meta name="msapplication-navbutton-color" content="#000">
+  <!-- iOS Safari -->
+  <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+  <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/media.css">
+
+</head>
+
+<body>
+
+<div class="search-hidden">
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<div class="search-hidden-wrapper">
+
+					<div class="search-hidden-wrapper__title">
+						<h2>Поиск услуг</h2>
+
+						<a href="#" class="search-hidden-close">
+							<svg class="svg-icon search-hidden-close__icon">
+								<use xlink:href="img/sprite.svg#close"></use>
+							</svg>
+							<span class="search-hidden-close__text">Закрыть</span>
+						</a>
+					</div>
+
+
+					<form method="post" class="form-search form-search-modal">
+						<label>
+							<a href="#" class="search-icon">
+								<svg class="svg-icon">
+									<use xlink:href="img/sprite.svg#search"></use>
+								</svg>
+							</a>
+							<input type="text" placeholder="Поиск услуги">
+						</label>
+						<button type="submit" class="btn btn-accent">Поиск</button>
+						<div class="result-search-modal">
+							<h3>Мы нашли для вас следующие услуги:</h3>
+
+							<div class="list-result-search">
+								<a href="#" class="list-result-search__column">
+									<strong>ИНН: 7820036631</strong>
+									<span>Ростелеком : Вся Россия</span>
+								</a>
+								<a href="#" class="list-result-search__column">
+									<strong>ИНН: 7820036631</strong>
+									<span>ЖэК 01: Воронеж</span>
+								</a>
+								<a href="#" class="list-result-search__column">
+									<strong>ФССП</strong>
+									<span>Задолженности в ФССП по ФИО: Вся Россияя</span>
+								</a>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="mobile-menu">
+  <a href="#" class="mobile-menu__close">
+    <svg class="svg-icon">
+      <use xlink:href="img/sprite.svg#close"></use>
+    </svg>
+  </a>
+  <a href="index.html" class="logo">
+    <img src="img/logo-max.svg" alt="">
+  </a>
+
+  <ul class="menu-mobile my-ul">
+    <li>
+      <a href="#">Задолженности физических лиц</a>
+
+      <div class="submenu-mobile">
+        <a href="#" class="link-prev">
+          <span class="link-prev__icon"><svg class="svg-icon"><use
+              xlink:href="img/sprite.svg#arrow-left"></use></svg></span>
+          <span class="link-prev__text">Назад</span>
+        </a>
+        <ul class="submenu-mobile-list my-ul">
+          <li><a href="#">Проверка долгов по ФИО</a></li>
+          <li><a href="#">Долги по ИНН</a></li>
+          <li><a href="#">Долги по паспорту</a></li>
+          <li><a href="#">Долги по СНИЛС</a></li>
+          <li><a href="#">Долги у приставов ООО</a></li>
+          <li><a href="#">Долги у приставов по ИП</a></li>
+          <li><a href="#">Долги выава</a></li>
+        </ul>
+      </div>
+    </li>
+    <li>
+      <a href="#">Задолженности юридических лиц</a>
+
+      <div class="submenu-mobile">
+        <a href="#" class="link-prev">
+          <span class="link-prev__icon"><svg class="svg-icon"><use
+              xlink:href="img/sprite.svg#arrow-left"></use></svg></span>
+          <span class="link-prev__text">Назад</span>
+        </a>
+        <ul class="submenu-mobile-list my-ul">
+          <li><a href="#">Проверка долгов по ФИО</a></li>
+          <li><a href="#">Долги по ИНН</a></li>
+          <li><a href="#">Долги по паспорту</a></li>
+          <li><a href="#">Долги по СНИЛС</a></li>
+          <li><a href="#">Долги у приставов ООО</a></li>
+          <li><a href="#">Долги у приставов по ИП</a></li>
+          <li><a href="#">Долги выава</a></li>
+        </ul>
+      </div>
+    </li>
+    <li>
+      <a href="#">Задолженности физических лиц</a>
+
+      <div class="submenu-mobile">
+        <a href="#" class="link-prev">
+          <span class="link-prev__icon"><svg class="svg-icon"><use
+              xlink:href="img/sprite.svg#arrow-left"></use></svg></span>
+          <span class="link-prev__text">Назад</span>
+        </a>
+        <ul class="submenu-mobile-list my-ul">
+          <li><a href="#">Проверка долгов по ФИО</a></li>
+          <li><a href="#">Долги по ИНН</a></li>
+          <li><a href="#">Долги по паспорту</a></li>
+          <li><a href="#">Долги по СНИЛС</a></li>
+          <li><a href="#">Долги у приставов ООО</a></li>
+          <li><a href="#">Долги у приставов по ИП</a></li>
+          <li><a href="#">Долги выава</a></li>
+        </ul>
+      </div>
+    </li>
+    <li>
+      <a href="#">Задолженности физических лиц</a>
+
+      <div class="submenu-mobile">
+        <a href="#" class="link-prev">
+          <span class="link-prev__icon"><svg class="svg-icon"><use
+              xlink:href="img/sprite.svg#arrow-left"></use></svg></span>
+          <span class="link-prev__text">Назад</span>
+        </a>
+        <ul class="submenu-mobile-list my-ul">
+          <li><a href="#">Проверка долгов по ФИО</a></li>
+          <li><a href="#">Долги по ИНН</a></li>
+          <li><a href="#">Долги по паспорту</a></li>
+          <li><a href="#">Долги по СНИЛС</a></li>
+          <li><a href="#">Долги у приставов ООО</a></li>
+          <li><a href="#">Долги у приставов по ИП</a></li>
+          <li><a href="#">Долги выава</a></li>
+        </ul>
+      </div>
+    </li>
+    <li>
+      <a href="#">Задолженности физических лиц</a>
+
+      <div class="submenu-mobile">
+        <a href="#" class="link-prev">
+          <span class="link-prev__icon"><svg class="svg-icon"><use
+              xlink:href="img/sprite.svg#arrow-left"></use></svg></span>
+          <span class="link-prev__text">Назад</span>
+        </a>
+        <ul class="submenu-mobile-list my-ul">
+          <li><a href="#">Проверка долгов по ФИО</a></li>
+          <li><a href="#">Долги по ИНН</a></li>
+          <li><a href="#">Долги по паспорту</a></li>
+          <li><a href="#">Долги по СНИЛС</a></li>
+          <li><a href="#">Долги у приставов ООО</a></li>
+          <li><a href="#">Долги у приставов по ИП</a></li>
+          <li><a href="#">Долги выава</a></li>
+        </ul>
+      </div>
+    </li>
+    <li>
+      <a href="#">Задолженности физических лиц</a>
+
+      <div class="submenu-mobile">
+        <a href="#" class="link-prev">
+          <span class="link-prev__icon"><svg class="svg-icon"><use
+              xlink:href="img/sprite.svg#arrow-left"></use></svg></span>
+          <span class="link-prev__text">Назад</span>
+        </a>
+        <ul class="submenu-mobile-list my-ul">
+          <li><a href="#">Проверка долгов по ФИО</a></li>
+          <li><a href="#">Долги по ИНН</a></li>
+          <li><a href="#">Долги по паспорту</a></li>
+          <li><a href="#">Долги по СНИЛС</a></li>
+          <li><a href="#">Долги у приставов ООО</a></li>
+          <li><a href="#">Долги у приставов по ИП</a></li>
+          <li><a href="#">Долги выава</a></li>
+        </ul>
+      </div>
+    </li>
+  </ul>
+
+  <ul class="menu my-ul">
+    <li><a href="#" class="active">Долги по ФИО</a></li>
+    <li><a href="#">Штрафы ГИБДД</a></li>
+    <li><a href="#">Долги в ФНС</a></li>
+  </ul>
+
+  <div class="footer-box">
+    <div class="footer-box__title">наши контакты</div>
+    <div class="header-contacts">
+      <div class="header-contacts__icon">
+        <svg class="svg-icon">
+          <use xlink:href="img/sprite.svg#phone"></use>
+        </svg>
+      </div>
+      <div class="header-contacts__text">
+        <a href="tel:+74951234567" class="phone">+7 (495) 123-45-67</a>
+        <span>время работы с 9:00 до 21:00</span>
+      </div>
+    </div>
+
+    <div class="header-contacts">
+      <div class="header-contacts__icon">
+        <svg class="svg-icon">
+          <use xlink:href="img/sprite.svg#mail"></use>
+        </svg>
+      </div>
+      <div class="header-contacts__text">
+        <a href="mailto:support@edolgi.ru" target="_blank" class="phone">support@edolgi.ru</a>
+        <span>служба поддержки</span>
+      </div>
+    </div>
+
+    <div class="header-contacts">
+      <div class="header-contacts__icon">
+        <svg class="svg-icon">
+          <use xlink:href="img/sprite.svg#tg"></use>
+        </svg>
+      </div>
+      <div class="header-contacts__text">
+        <a href="https://telegram.im/@support-edolgi.ru" target="_blank" class="phone">@support-edolgi.ru</a>
+        <span>наш телеграмм канал</span>
+      </div>
+    </div>
+    <ul class="list-social my-ul">
+      <li><a href="#">
+        <svg class="svg-icon">
+          <use xlink:href="img/sprite.svg#ok"></use>
+        </svg>
+      </a></li>
+      <li><a href="#">
+        <svg class="svg-icon">
+          <use xlink:href="img/sprite.svg#youtube"></use>
+        </svg>
+      </a></li>
+    </ul>
+  </div>
+</div>
+
+<header>
+  <div class="container">
+    <div class="row">
+      <div class="col-12 d-flex flex-wrap align-items-center">
+        <a href="#" class="btn-burger">
+          <svg class="svg-icon">
+            <use xlink:href="img/sprite.svg#burger"></use>
+          </svg>
+        </a>
+
+        <a href="index.html" class="logo">
+          <span class="logo-image"><img src="img/logo.svg" alt=""></span>
+          <span class="logo-text">
+            <span class="logo-title">EDolgi.ru</span>
+            <span class="logo-description">cервис электронных услуг </span>
+          </span>
+        </a>
+
+        <form method="post" class="form-search form-search-header">
+          <label>
+            <span class="search-icon">
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#search"></use>
+              </svg>
+            </span>
+            <input type="text" placeholder="Поиск услуги">
+          </label>
+        </form>
+
+        <ul class="menu my-ul">
+          <li><a href="#" class="active">Долги по ФИО</a></li>
+          <li><a href="#">Штрафы ГИБДД</a></li>
+          <li><a href="#">Долги в ФНС</a></li>
+        </ul>
+
+        <div class="header-contacts">
+          <div class="header-contacts__icon">
+            <svg class="svg-icon">
+              <use xlink:href="img/sprite.svg#phone"></use>
+            </svg>
+          </div>
+          <div class="header-contacts__text">
+            <a href="tel:+74951234567" class="phone">+7 <span>(495)</span> 123-45-67</a>
+            <div class="schedule">время работы с 9:00 до 21:00</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="breadcrumb-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <nav class="nav-breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html"><img src="img/home.svg" alt=""></a></li>
+            <li class="breadcrumb-item"><a href="#">...</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Проверка и оплата штрафов ГИБДД</li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section class="search-base checkout-fns">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <ul class="nav nav-pills nav-tabs d-none d-md-flex" role="tablist">
+          <li class="nav-item" role="presentation">
+            <a class="nav-link active" id="nav-tab1" data-toggle="pill" href="#tab1" role="tab"
+               aria-controls="tab1" aria-selected="true">
+              Проверка по автомобилю
+            </a>
+          </li>
+          <li class="nav-item" role="presentation">
+            <a class="nav-link" id="nav-tab2" data-toggle="pill" href="#tab2" role="tab"
+               aria-controls="tab2" aria-selected="false">
+              Проверка по водителю
+            </a>
+          </li>
+          <li class="nav-item" role="presentation">
+            <a class="nav-link" id="nav-tab3" data-toggle="pill" href="#tab3" role="tab"
+               aria-controls="tab3" aria-selected="false">
+              Оплата по номеру постановления
+            </a>
+          </li>
+        </ul>
+        <div class="d-block d-md-none">
+          <select class="tab_selector js-example-basic-single">
+            <option value="0">Проверка по автомобилю</option>
+            <option value="1">Проверка по водителю</option>
+            <option value="2">Оплата по номеру постановления</option>
+          </select>
+        </div>
+
+        <div class="tab-content">
+          <div class="tab-pane fade show active" id="tab1" role="tabpanel"
+               aria-labelledby="nav-tab1">
+            <div class="search-base-wrapper">
+              <div class="search-base-wrapper__top">
+
+                <h1>Проверка и оплата штрафов ГИБДД</h1>
+                <div class="text-title">
+                  <p>Найденные штрафы можно моментально оплатить, большинство в первые 20 дней — со скидкой 50%. </p>
+                </div>
+
+                <form method="post" class="form-search-inn form-my form-my-start">
+                  <div class="form-group form-group-number-car">
+                    <div class="input-title">Номер автомобиля и регион</div>
+                    <label class="label-number-car">
+                      <span class="input-group">
+                        <span class="input-icon stroke-none"><svg class="svg-icon"><use
+                            xlink:href="img/sprite.svg#car"></use></svg></span>
+                      <input type="text" placeholder="А123АА">
+
+                      </span>
+
+
+                      <span class="input-group input-group-region">
+                        <input type="text" value="111" name="region_number" data-toggle="dropdown">
+                        <span class="dropdown-menu">
+                         <a href="#" class="dropdown-item">0</a>
+                         <a href="#" class="dropdown-item">1</a>
+                         <a href="#" class="dropdown-item">2</a>
+                         <a href="#" class="dropdown-item">3</a>
+                         <a href="#" class="dropdown-item">4</a>
+                         <a href="#" class="dropdown-item">5</a>
+                         <a href="#" class="dropdown-item">6</a>
+                         <a href="#" class="dropdown-item">7</a>
+                         <a href="#" class="dropdown-item">8</a>
+                         <a href="#" class="dropdown-item">9</a>
+                         <a href="#" class="dropdown-item">10</a>
+                         <a href="#" class="dropdown-item">11</a>
+                         <a href="#" class="dropdown-item">12</a>
+                         <a href="#" class="dropdown-item">13</a>
+                         <a href="#" class="dropdown-item">14</a>
+                         <a href="#" class="dropdown-item">15</a>
+                        </span>
+                      </span>
+                    </label>
+                    <div class="tooltip-wrapper">
+                      <div class="btn-tooltip">
+                        <svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#question-icon"></use>
+                        </svg>
+                      </div>
+                      <div class="tooltip-box">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias commodi earum eum fugit
+                          laudantium magni rem sequi voluptas? Assumenda libero modi sunt? Atque error ipsam nihil,
+                          reprehenderit sed sunt vel?</p>
+                      </div>
+                    </div>
+
+                    <div class="example-item">Пример: <span>А123АА</span></div>
+                  </div>
+
+                  <div class="form-group form-group-name">
+                    <div class="input-title">Свидетельство о регистрации ТС</div>
+                    <label>
+                      <span class="input-icon"><svg class="svg-icon"><use
+                          xlink:href="img/sprite.svg#file"></use></svg></span>
+                      <input type="text" placeholder="00 АА 123456" name="document_number">
+                    </label>
+                    <div class="tooltip-wrapper">
+                      <div class="btn-tooltip">
+                        <svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#question-icon"></use>
+                        </svg>
+                      </div>
+                      <div class="tooltip-box">
+                        <img src="img/document.jpg" alt="">
+                      </div>
+                    </div>
+                    <div class="example-item">Пример: <span>00 АА 123456</span>
+                      <p class="color-red">*Для проверки штрафов с камер фото- и видеофиксации нарушений.</p>
+                    </div>
+                  </div>
+
+
+                  <div class="form-group">
+                    <div class="input-title">Ваша почта</div>
+                    <label>
+                  <span class="input-icon"><svg class="svg-icon"><use
+                      xlink:href="img/sprite.svg#mail"></use></svg></span>
+                      <input type="text" placeholder="ivanov@mail.ru" name="mail">
+                    </label>
+                    <div class="example-item">Для бесплатного уведомления о новых штрафах ГИБДД</div>
+                  </div>
+
+                  <button type="submit" class="btn btn-accent">Проверить штрафы</button>
+
+                  <label class="checkbox">
+                    <input type="checkbox" checked="">
+                    <span class="checkbox-custom"></span>
+                    <span class="checkbox-text">Я соглашаюсь с условиями <a href="#"
+                                                                            class="d-inline color-accent text-decoration">обработки персональных данных</a></span>
+                  </label>
+                </form>
+
+              </div>
+              <div class="search-base-wrapper__bottom attention-info">
+                <div class="search-base-info">
+                  <div class="search-base-info__icon"><img src="img/attention-icon.svg" alt=""></div>
+                  <div class="search-base-info__text">
+                    <span>Поиск и проверка долгов граждан РФ осуществляется в открытом и свободном доступе через официальную базу Федеральной Службы Судебных Приставов России ФССП в режиме онлайн. Сервис предоставляет сведения для ознакомления и носит исключительно информационный характер. Официальный сайт ФССП - fssp.gov.ru</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="tab-pane fade" id="tab2" role="tabpanel"
+               aria-labelledby="nav-tab2">
+
+            <div class="search-base-wrapper">
+              <div class="search-base-wrapper__top">
+                <h1>Проверка и оплата штрафов ГИБДД</h1>
+                <div class="text-title">
+                  <p>Найденные штрафы можно моментально оплатить, большинство в первые 20 дней — со скидкой 50%. </p>
+                </div>
+
+                <form method="post" class="form-search-inn form-my form-my-start">
+                  <div class="form-group form-group-name">
+                    <div class="input-title">Водительское удостоверение</div>
+                    <label>
+                      <span class="input-icon stroke-none"><svg class="svg-icon"><use
+                          xlink:href="img/sprite.svg#car"></use></svg></span>
+                      <input type="text" placeholder="12 АА 123456" name="document_number">
+                    </label>
+                    <div class="tooltip-wrapper">
+                      <div class="btn-tooltip">
+                        <svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#question-icon"></use>
+                        </svg>
+                      </div>
+                      <div class="tooltip-box">
+                        <img src="img/document.jpg" alt="">
+                      </div>
+                    </div>
+                    <div class="example-item">Пример: <span>А123АА</span>
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <div class="input-title">Ваша почта</div>
+                    <label>
+                  <span class="input-icon"><svg class="svg-icon"><use
+                      xlink:href="img/sprite.svg#mail"></use></svg></span>
+                      <input type="text" placeholder="ivanov@mail.ru" name="mail">
+                    </label>
+                    <div class="example-item">Для бесплатного уведомления о новых штрафах ГИБДД</div>
+                  </div>
+
+                  <button type="submit" class="btn btn-accent">Проверить штрафы</button>
+
+                  <label class="checkbox">
+                    <input type="checkbox" checked="">
+                    <span class="checkbox-custom"></span>
+                    <span class="checkbox-text">Я соглашаюсь с условиями <a href="#"
+                                                                            class="d-inline color-accent text-decoration">обработки персональных данных</a></span>
+                  </label>
+                </form>
+
+              </div>
+
+              <div class="search-base-wrapper__bottom attention-info">
+                <div class="search-base-info">
+                  <div class="search-base-info__icon"><img src="img/attention-icon.svg" alt=""></div>
+                  <div class="search-base-info__text">
+                    <span>Поиск и проверка долгов граждан РФ осуществляется в открытом и свободном доступе через официальную базу Федеральной Службы Судебных Приставов России ФССП в режиме онлайн. Сервис предоставляет сведения для ознакомления и носит исключительно информационный характер. Официальный сайт ФССП - fssp.gov.ru</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="tab-pane fade" id="tab3" role="tabpanel"
+               aria-labelledby="nav-tab2">
+
+            <div class="search-base-wrapper">
+              <div class="search-base-wrapper__top">
+                <h1>Проверка и оплата штрафов ГИБДД</h1>
+                <div class="text-title">
+                  <p>Найденные штрафы можно моментально оплатить, большинство в первые 20 дней — со скидкой 50%.</p>
+                </div>
+
+                <form method="post" class="form-search-inn form-my form-my-start checkout-fns-form">
+                  <div class="form-group form-group-name">
+                    <div class="input-title">УИН</div>
+                    <label>
+                      <span class="input-icon"><svg class="svg-icon"><use xlink:href="img/sprite.svg#file"></use></svg></span>
+                      <input type="text" placeholder="УИН - 12 цифр" name="uin">
+                    </label>
+                    <div class="tooltip-wrapper">
+                      <div class="btn-tooltip">
+                        <svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#question-icon"></use>
+                        </svg>
+                      </div>
+                      <div class="tooltip-box">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias commodi earum eum fugit
+                          laudantium magni rem sequi voluptas? Assumenda libero modi sunt? Atque error ipsam nihil,
+                          reprehenderit sed sunt vel?</p>
+                      </div>
+                    </div>
+                    <div class="example-item">Пример: <span>А123АА</span></div>
+                  </div>
+
+
+                  <button type="submit" class="btn btn-accent">Проверить штрафы</button>
+
+                  <label class="checkbox">
+                    <input type="checkbox" checked="">
+                    <span class="checkbox-custom"></span>
+                    <span class="checkbox-text">Я соглашаюсь с условиями <a href="#"
+                                                                            class="d-inline color-accent text-decoration">обработки персональных данных</a></span>
+                  </label>
+                </form>
+
+                <div class="search-base-info search-base-info-attention">
+                  <div class="search-base-info__icon"><img src="img/attention-icon.svg" alt=""></div>
+                  <div class="search-base-info__text">
+                    <p>Поиск и проверка долгов граждан РФ осуществляется в открытом и свободном доступе через
+                      официальную базу Федеральной Службы Судебных Приставов России ФССП в режиме онлайн. Сервис
+                      предоставляет сведения для ознакомления и носит исключительно информационный характер.</p>
+                    <p>Официальный сайт ФССП - fssp.gov.ru</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="search-base-wrapper__bottom attention-info">
+                <div class="search-base-info subscribe-fines">
+                  <div class="subscribe-fines__text">
+                    <h3>Бесплатное уведомление о новых штрафах на E-mail</h3>
+                    <div class="box-text">
+                      <p>Найденные штрафы можно моментально оплатить — со скидкой 50%.</p>
+                    </div>
+                  </div>
+
+                  <form method="post" class="form-search-inn form-my form-my-start">
+                    <div class="form-group form-group-name">
+                      <div class="input-title">Свидетельство о регистрации ТС</div>
+                      <label>
+                      <span class="input-icon"><svg class="svg-icon"><use
+                          xlink:href="img/sprite.svg#file"></use></svg></span>
+                        <input type="text" placeholder="00 АА 123456" name="document_number">
+                      </label>
+                      <div class="tooltip-wrapper">
+                        <div class="btn-tooltip">
+                          <svg class="svg-icon">
+                            <use xlink:href="img/sprite.svg#question-icon"></use>
+                          </svg>
+                        </div>
+                        <div class="tooltip-box">
+                          <img src="img/document.jpg" alt="">
+                        </div>
+                      </div>
+                      <div class="example-item">Пример: <span>А123АА</span>
+                      </div>
+                    </div>
+
+                    <div class="form-group">
+                      <div class="input-title">Ваша почта</div>
+                      <label>
+                  <span class="input-icon"><svg class="svg-icon"><use
+                      xlink:href="img/sprite.svg#mail"></use></svg></span>
+                        <input type="text" placeholder="ivanov@mail.ru" name="mail">
+                      </label>
+                    </div>
+
+                    <button type="submit" class="btn btn-accent">Подписаться</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="why-me bg-light-blue p-96">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-lg-8 offset-lg-2 text-center mb-32">
+        <h2>Почему обращаются именно к нам</h2>
+        <div class="text-title"><p>Все что вы хотите знать о нашем сервисе по стравнительно честному отъему денег у
+          населения</p></div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12">
+        <div class="why-me-wrapper">
+          <div class="why-me-box">
+            <div class="why-me-box__icon"><img src="img/why1.svg" alt=""></div>
+            <p>Фото с места нарушения</p>
+          </div>
+          <div class="why-me-box">
+            <div class="why-me-box__icon"><img src="img/why2.svg" alt=""></div>
+            <p>Оплата штрафа со скидкой 50% </p>
+          </div>
+          <div class="why-me-box">
+            <div class="why-me-box__icon"><img src="img/why3.svg" alt=""></div>
+            <p>Уведомление о погашении </p>
+          </div>
+          <div class="why-me-box">
+            <div class="why-me-box__icon"><img src="img/adv-icon6.svg" alt=""></div>
+            <p>Гарантия погашения</p>
+          </div>
+          <div class="why-me-box">
+            <div class="why-me-box__icon"><img src="img/why4.svg" alt=""></div>
+            <p>Квитанция об оплате сразу </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="statistics statistics-days">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center mb-32">
+        <div class="text-title">
+          <p>Официальная сводка по новым начислениям штрафов ГИБДД</p>
+        </div>
+        <h2>Статистика выставления штрафов по все России за текущий день</h2>
+
+      </div>
+
+      <div class="col-12">
+        <table class="table">
+          <thead class="thead">
+          <tr class="tr">
+            <td class="td-time">Время штрафа</td>
+            <td class="td-region">Регион</td>
+            <td class="td-base">Место нарушения</td>
+            <td class="td-number">Гос. номер</td>
+            <td class="td-status">Скидка 50%</td>
+            <td class="td-sum">Сумма штрафа</td>
+          </tr>
+          </thead>
+          <tbody class="tbody">
+          <tr class="tr">
+            <td class="td-time" data-table="Время штрафа">
+              <p>12:30</p><span>от 10.10.2022</span>
+            </td>
+            <td class="td-region" data-table="Регион">Московская область
+            </td>
+            <td class="td-base" data-table="Место нарушения">ул. Лермонотова 12 пересечение с Переверткино
+            </td>
+            <td class="td-number" data-table="Гос. номер">
+              <p>а123ва124</p>
+            </td>
+            <td class="td-status" data-table="Скидка 50%">
+              Есть
+            </td>
+            <td class="td-sum" data-table="Сумма штрафа">
+              20 434.71 руб.
+            </td>
+          </tr>
+          <tr class="tr">
+            <td class="td-time" data-table="Время штрафа">
+              <p>12:30</p><span>от 10.10.2022</span>
+            </td>
+            <td class="td-region" data-table="Регион">Московская область
+            </td>
+            <td class="td-base" data-table="Место нарушения">ул. Лермонотова 12 пересечение с Переверткино
+            </td>
+            <td class="td-number" data-table="Гос. номер">
+              <p>а123ва124</p>
+            </td>
+            <td class="td-status" data-table="Скидка 50%">
+              Есть
+            </td>
+            <td class="td-sum" data-table="Сумма штрафа">
+              20 434.71 руб.
+            </td>
+          </tr>
+          <tr class="tr">
+            <td class="td-time" data-table="Время штрафа">
+              <p>12:30</p><span>от 10.10.2022</span>
+            </td>
+            <td class="td-region" data-table="Регион">Московская область
+            </td>
+            <td class="td-base" data-table="Место нарушения">ул. Лермонотова 12 пересечение с Переверткино
+            </td>
+            <td class="td-number" data-table="Гос. номер">
+              <p>а123ва124</p>
+            </td>
+            <td class="td-status" data-table="Скидка 50%">
+              Есть
+            </td>
+            <td class="td-sum" data-table="Сумма штрафа">
+              20 434.71 руб.
+            </td>
+          </tr>
+          <tr class="tr">
+            <td class="td-time" data-table="Время штрафа">
+              <p>12:30</p><span>от 10.10.2022</span>
+            </td>
+            <td class="td-region" data-table="Регион">Московская область
+            </td>
+            <td class="td-base" data-table="Место нарушения">ул. Лермонотова 12 пересечение с Переверткино
+            </td>
+            <td class="td-number" data-table="Гос. номер">
+              <p>а123ва124</p>
+            </td>
+            <td class="td-status" data-table="Скидка 50%">
+              Есть
+            </td>
+            <td class="td-sum" data-table="Сумма штрафа">
+              20 434.71 руб.
+            </td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="warranty-payment">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="application-wrapper">
+          <div class="row">
+            <div class="col-12 col-lg-7">
+              <div class="application-content">
+                <div class="text-title"><strong>Гарантия оплаты</strong></div>
+                <h2>Проводим платежи в ГИС ГМП в день оплаты без задержек!</h2>
+                <div class="text-title">
+                  <p>Выдаем официальные квитанции и платежные поручения после оплаты</p>
+                </div>
+                <div class="box-text">
+
+                  <div class="row">
+                    <div class="col-12 col-sm-6 col-lg-7">
+                      <p>Расчеты по переводу денежных средств осуществляет ООО НКО «Перспектива».</p>
+                      <p>Лизцензия ЦБ РФ № 3532-К от 21 июля 2015 года.</p>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-lg-5">
+                      <ul class="my-ul list-requisites-my">
+                        <li>Реквизиты НКО «Перспектива»</li>
+                        <li>ОГРН 1155500000017
+                        <li>ИНН 5503135638</li>
+                        <li>КПП 550301001</li>
+                        <li>ОКПО 23754693</li>
+                        <li>БИК 045209885</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="logo-bank"><img src="img/bank.svg" alt=""></div>
+
+              </div>
+            </div>
+            <div class="col-12 col-lg-5">
+              <div class="application-image"><img src="img/payment-document.png" alt=""></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="official-sources bg-light-blue p-96">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center">
+        <h2>Официальные источники данных</h2>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12">
+        <div class="official-sources-wrapper">
+          <div class="official-sources-box">
+            <div class="official-sources-box__icon"><img src="img/sources1.png" alt=""></div>
+            <p>МУГАДН</p>
+          </div>
+          <div class="official-sources-box">
+            <div class="official-sources-box__icon"><img src="img/sources2.png" alt=""></div>
+            <p>МАДИ, АМПП</p>
+          </div>
+          <div class="official-sources-box">
+            <div class="official-sources-box__icon"><img src="img/sources3.png" alt=""></div>
+            <p>Банк данных <br>
+              ФССП</p>
+          </div>
+          <div class="official-sources-box">
+            <div class="official-sources-box__icon"><img src="img/sources4.png" alt=""></div>
+            <p>Федеральное
+              Казначейство
+              России</p>
+          </div>
+          <div class="official-sources-box">
+            <div class="official-sources-box__icon"><img src="img/sources5.png" alt=""></div>
+            <p>База данных <br>
+              ГИБДД </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="question p-96">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-lg-8 offset-lg-2 text-center mb-32">
+        <h2>Ответы на часто задаваемые вопросы</h2>
+        <div class="text-title">Все что вы хотите знать о нашем сервисе по стравнительно честному отъему денег у
+          населения
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12">
+        <div class="accordion" id="accordionExample">
+          <div class="card">
+            <div class="card-header" id="headingOne">
+              <h3 data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                Ограничение гражданам РФ пересечения границы на выезд со стороны судебных приставов-исполнителей
+              </h3>
+            </div>
+
+            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+              <div class="card-body">
+
+                <p>Ограничение может быть наложено на граждан и индивидуальных предпринимателей в следующих случаях :
+                </p>
+
+                <ol>
+                  <li>Выплата алиментов, возмещение разнообразных форм вреда: потеря кормильца, имущественный или
+                    моральный ущерб, потеря здоровья и так далее. При сумме, превышающей 10 тысяч рублей, по решению
+                    приставов-исполнителей выезд за пределы Российской Федерации временно ограничивается.
+                  </li>
+                  <li>Наличие претензий неимущественного характера.
+                  </li>
+                  <li>Если должник не оплатил более 30 тысяч рублей, то перспектива стать невыездным велика, как и после
+                    истечения двух месяцев после окончания отведенного ранее срока для исполнения наложенных судом
+                    обязательств.
+
+                  </li>
+                </ol>
+
+                <p>Когда исполнительные документы не являются следствием судебных решений, актов, этом случае
+                  ограничение на выезд из Российской Федерации может быть инициировано приставом-исполнителем.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingTwo">
+              <h3 class="collapsed" data-toggle="collapse"
+                  data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Ограничение гражданам РФ пересечения границы на выезд со стороны судебных приставов-исполнителей
+              </h3>
+            </div>
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+              <div class="card-body">
+                <p>Ограничение может быть наложено на граждан и индивидуальных предпринимателей в следующих случаях :
+                </p>
+
+                <ol>
+                  <li>Выплата алиментов, возмещение разнообразных форм вреда: потеря кормильца, имущественный или
+                    моральный ущерб, потеря здоровья и так далее. При сумме, превышающей 10 тысяч рублей, по решению
+                    приставов-исполнителей выезд за пределы Российской Федерации временно ограничивается.
+                  </li>
+                  <li>Наличие претензий неимущественного характера.
+                  </li>
+                  <li>Если должник не оплатил более 30 тысяч рублей, то перспектива стать невыездным велика, как и после
+                    истечения двух месяцев после окончания отведенного ранее срока для исполнения наложенных судом
+                    обязательств.
+
+                  </li>
+                </ol>
+
+                <p>Когда исполнительные документы не являются следствием судебных решений, актов, этом случае
+                  ограничение на выезд из Российской Федерации может быть инициировано приставом-исполнителем.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingThree">
+              <h3 class="collapsed" data-toggle="collapse"
+                  data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Кем выполняется оценка имущества после ареста?
+              </h3>
+            </div>
+            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+              <div class="card-body">
+                <p>Ограничение может быть наложено на граждан и индивидуальных предпринимателей в следующих случаях :
+                </p>
+
+                <ol>
+                  <li>Выплата алиментов, возмещение разнообразных форм вреда: потеря кормильца, имущественный или
+                    моральный ущерб, потеря здоровья и так далее. При сумме, превышающей 10 тысяч рублей, по решению
+                    приставов-исполнителей выезд за пределы Российской Федерации временно ограничивается.
+                  </li>
+                  <li>Наличие претензий неимущественного характера.
+                  </li>
+                  <li>Если должник не оплатил более 30 тысяч рублей, то перспектива стать невыездным велика, как и после
+                    истечения двух месяцев после окончания отведенного ранее срока для исполнения наложенных судом
+                    обязательств.
+
+                  </li>
+                </ol>
+
+                <p>Когда исполнительные документы не являются следствием судебных решений, актов, этом случае
+                  ограничение на выезд из Российской Федерации может быть инициировано приставом-исполнителем.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingFour">
+              <h3 class="collapsed" data-toggle="collapse"
+                  data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                Ограничение гражданам РФ пересечения границы на выезд со стороны судебных приставов-исполнителей
+              </h3>
+            </div>
+            <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+              <div class="card-body">
+                <p>Ограничение может быть наложено на граждан и индивидуальных предпринимателей в следующих случаях :
+                </p>
+
+                <ol>
+                  <li>Выплата алиментов, возмещение разнообразных форм вреда: потеря кормильца, имущественный или
+                    моральный ущерб, потеря здоровья и так далее. При сумме, превышающей 10 тысяч рублей, по решению
+                    приставов-исполнителей выезд за пределы Российской Федерации временно ограничивается.
+                  </li>
+                  <li>Наличие претензий неимущественного характера.
+                  </li>
+                  <li>Если должник не оплатил более 30 тысяч рублей, то перспектива стать невыездным велика, как и после
+                    истечения двух месяцев после окончания отведенного ранее срока для исполнения наложенных судом
+                    обязательств.
+
+                  </li>
+                </ol>
+
+                <p>Когда исполнительные документы не являются следствием судебных решений, актов, этом случае
+                  ограничение на выезд из Российской Федерации может быть инициировано приставом-исполнителем.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingFive">
+              <h3 class="collapsed" data-toggle="collapse"
+                  data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                Ограничение гражданам РФ пересечения границы на выезд со стороны судебных приставов-исполнителей
+              </h3>
+            </div>
+            <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+              <div class="card-body">
+                <p>Ограничение может быть наложено на граждан и индивидуальных предпринимателей в следующих случаях :
+                </p>
+
+                <ol>
+                  <li>Выплата алиментов, возмещение разнообразных форм вреда: потеря кормильца, имущественный или
+                    моральный ущерб, потеря здоровья и так далее. При сумме, превышающей 10 тысяч рублей, по решению
+                    приставов-исполнителей выезд за пределы Российской Федерации временно ограничивается.
+                  </li>
+                  <li>Наличие претензий неимущественного характера.
+                  </li>
+                  <li>Если должник не оплатил более 30 тысяч рублей, то перспектива стать невыездным велика, как и после
+                    истечения двух месяцев после окончания отведенного ранее срока для исполнения наложенных судом
+                    обязательств.
+
+                  </li>
+                </ol>
+
+                <p>Когда исполнительные документы не являются следствием судебных решений, актов, этом случае
+                  ограничение на выезд из Российской Федерации может быть инициировано приставом-исполнителем.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="application">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="application-wrapper">
+          <div class="row">
+            <div class="col-12 col-lg-6">
+              <div class="application-content">
+                <h2>Приложение для поиска долгов по базе ФССП, ГИБДД, ФНС, ЖКХ</h2>
+                <div class="box-text">
+                  <ul>
+                    <li>Проверка долгов по базе ФССП + ГИС ГМП (актуальные долги)
+                    </li>
+                    <li>Номера телефонов судебных приставов
+                    </li>
+                    <li>Полная информация по номеру испол. производства
+                    </li>
+                    <li>Оповещение о новых задолженностях
+                    </li>
+                    <li>При оплате выдача платежного поручения
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="application-links">
+                  <a href="#" target="_blank" class="application-links__item"><img src="img/app-ios.svg" alt=""></a>
+                  <a href="#" target="_blank" class="application-links__item"><img src="img/app-google.svg" alt=""></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6">
+              <div class="application-image"><img src="img/phone-image.png" alt=""></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="services p-96">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-lg-8 offset-lg-2 text-center mb-32">
+        <h2>Доступные сервисы для оплаты</h2>
+        <div class="text-title">
+          <p>Часть сервисов находится в разработке, пожалуйста напишите нам если здесь не хватает сервиса.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12">
+        <ul class="list-filter nav-pills nav list-filter-pagination my-ul" role="tablist">
+          <li class="nav-item" role="presentation"><a href="#tab-pagination1" data-toggle="pill" role="tab"
+                                                      class="active nav-link" aria-selected="true">Популярные</a></li>
+          <li class="nav-item" role="presentation"><a class="nav-link" href="#tab-pagination2" data-toggle="pill" role="tab"
+                                                      aria-selected="false">Интернет</a></li>
+          <li class="nav-item" role="presentation"><a class="nav-link" href="#tab-pagination3" data-toggle="pill" role="tab"
+                                                      aria-selected="false">Платное телевидение</a></li>
+          <li class="nav-item" role="presentation"><a class="nav-link" href="#tab-pagination4" data-toggle="pill" role="tab"
+                                                      aria-selected="false">Охрана и домофоны</a></li>
+          <li class="nav-item" role="presentation"><a class="nav-link" href="#tab-pagination3" data-toggle="pill" role="tab"
+                                                      aria-selected="false">Комунальные службы</a></li>
+          <li class="nav-item" role="presentation"><a class="nav-link" href="#tab-pagination4" data-toggle="pill" role="tab"
+                                                      aria-selected="false">Комунальные службы</a></li>
+          <li class="nav-item" role="presentation"><a class="nav-link" href="#tab-pagination2" data-toggle="pill" role="tab"
+                                                      aria-selected="false">Комунальные службы</a></li>
+          <li class="nav-item" role="presentation"><a class="nav-link" href="#tab-pagination1" data-toggle="pill" role="tab"
+                                                      aria-selected="false">Интернет</a></li>
+          <li class="nav-item" role="presentation"><a class="nav-link" href="#tab-pagination4" data-toggle="pill" role="tab"
+                                                      aria-selected="false">Платное телевидение</a></li>
+          <li class="nav-item" role="presentation"><a class="nav-link" href="#tab-pagination3" data-toggle="pill" role="tab"
+                                                      aria-selected="false">Охрана и домофоны</a></li>
+          <li class="nav-item" role="presentation"><a class="nav-link" href="#tab-pagination1" data-toggle="pill" role="tab"
+                                                      aria-selected="false">Комунальные службы</a></li>
+          <li class="nav-item" role="presentation"><a class="nav-link" href="#tab-pagination2" data-toggle="pill" role="tab"
+                                                      aria-selected="false">Комунальные службы</a></li>
+          <li class="nav-item" role="presentation"><a class="nav-link" href="#tab-pagination4" data-toggle="pill" role="tab"
+                                                      aria-selected="false">Комунальные службы</a></li>
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="tab-content">
+      <div class="tab-pane fade show active" id="tab-pagination1" role="tabpanel"
+           aria-labelledby="nav-tab-pagination1">
+        <div class="row">
+          <div class="col-12 col-sm-6 col-md-4 col-lg-2 mb-24">
+            <div class="services-box">
+              <div class="services-box__icon"><img src="img/service1.png" alt=""></div>
+              <p>ООО «Газпром Межрегионгаз»
+              </p>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-2 mb-24">
+            <div class="services-box">
+              <div class="services-box__icon"><img src="img/service2.png" alt=""></div>
+              <p>ОАО «Электросеть» г. о. Мытищи</p>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-2 mb-24">
+            <div class="services-box">
+              <div class="services-box__icon"><img src="img/service3.png" alt=""></div>
+              <p>Оплата штрафов ГИБДД </p>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-2 mb-24">
+            <div class="services-box">
+              <div class="services-box__icon"><img src="img/service4.png" alt=""></div>
+              <p>Налоги (Федеральное Казначейство)</p>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-2 mb-24">
+            <div class="services-box services-box-no">
+              <div class="services-box__icon"><img src="img/service6.png" alt=""></div>
+              <p>Скоро будет доступно</p>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-2 mb-24">
+            <div class="services-box">
+              <div class="services-box__icon"><img src="img/service5.png" alt=""></div>
+              <p>МТС, мобильная связь</p>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-2 mb-24">
+            <div class="services-box">
+              <div class="services-box__icon"><img src="img/service1.png" alt=""></div>
+              <p>ООО «Газпром Межрегионгаз»
+              </p>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-2 mb-24">
+            <div class="services-box">
+              <div class="services-box__icon"><img src="img/service2.png" alt=""></div>
+              <p>ОАО «Электросеть» г. о. Мытищи</p>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-2 mb-24">
+            <div class="services-box">
+              <div class="services-box__icon"><img src="img/service3.png" alt=""></div>
+              <p>Оплата штрафов ГИБДД </p>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-2 mb-24">
+            <div class="services-box">
+              <div class="services-box__icon"><img src="img/service4.png" alt=""></div>
+              <p>Налоги (Федеральное Казначейство)</p>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-2 mb-24">
+            <div class="services-box">
+              <div class="services-box__icon"><img src="img/service5.png" alt=""></div>
+              <p>МТС, мобильная связь</p>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-2 mb-24">
+            <div class="services-box">
+              <div class="services-box__icon"><img src="img/service5.png" alt=""></div>
+              <p>МТС, мобильная связь</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tab-pane fade" id="tab-pagination2" role="tabpanel"
+           aria-labelledby="nav-tab-pagination2">
+        <div class="row">
+          <div class="col-12 col-sm-6 col-md-4 col-lg-2 mb-24">
+            <div class="services-box">
+              <div class="services-box__icon"><img src="img/service1.png" alt=""></div>
+              <p>ООО «Газпром Межрегионгаз»
+              </p>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-2 mb-24">
+            <div class="services-box">
+              <div class="services-box__icon"><img src="img/service2.png" alt=""></div>
+              <p>ОАО «Электросеть» г. о. Мытищи</p>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-2 mb-24">
+            <div class="services-box">
+              <div class="services-box__icon"><img src="img/service3.png" alt=""></div>
+              <p>Оплата штрафов ГИБДД </p>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-2 mb-24">
+            <div class="services-box">
+              <div class="services-box__icon"><img src="img/service4.png" alt=""></div>
+              <p>Налоги (Федеральное Казначейство)</p>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-2 mb-24">
+            <div class="services-box services-box-no">
+              <div class="services-box__icon"><img src="img/service6.png" alt=""></div>
+              <p>Скоро будет доступно</p>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-2 mb-24">
+            <div class="services-box">
+              <div class="services-box__icon"><img src="img/service5.png" alt=""></div>
+              <p>МТС, мобильная связь</p>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-2 mb-24">
+            <div class="services-box">
+              <div class="services-box__icon"><img src="img/service1.png" alt=""></div>
+              <p>ООО «Газпром Межрегионгаз»
+              </p>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-2 mb-24">
+            <div class="services-box">
+              <div class="services-box__icon"><img src="img/service2.png" alt=""></div>
+              <p>ОАО «Электросеть» г. о. Мытищи</p>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-2 mb-24">
+            <div class="services-box">
+              <div class="services-box__icon"><img src="img/service3.png" alt=""></div>
+              <p>Оплата штрафов ГИБДД </p>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-2 mb-24">
+            <div class="services-box">
+              <div class="services-box__icon"><img src="img/service4.png" alt=""></div>
+              <p>Налоги (Федеральное Казначейство)</p>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-2 mb-24">
+            <div class="services-box">
+              <div class="services-box__icon"><img src="img/service5.png" alt=""></div>
+              <p>МТС, мобильная связь</p>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-2 mb-24">
+            <div class="services-box">
+              <div class="services-box__icon"><img src="img/service5.png" alt=""></div>
+              <p>МТС, мобильная связь</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tab-pane fade" id="tab-pagination3" role="tabpanel"
+           aria-labelledby="nav-tab-pagination3">
+        <div class="row">
+          <div class="col-12 col-sm-6 col-md-4 col-lg-2 mb-24">
+            <div class="services-box">
+              <div class="services-box__icon"><img src="img/service1.png" alt=""></div>
+              <p>ООО «Газпром Межрегионгаз»
+              </p>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-2 mb-24">
+            <div class="services-box">
+              <div class="services-box__icon"><img src="img/service2.png" alt=""></div>
+              <p>ОАО «Электросеть» г. о. Мытищи</p>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-2 mb-24">
+            <div class="services-box">
+              <div class="services-box__icon"><img src="img/service3.png" alt=""></div>
+              <p>Оплата штрафов ГИБДД </p>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-2 mb-24">
+            <div class="services-box">
+              <div class="services-box__icon"><img src="img/service4.png" alt=""></div>
+              <p>Налоги (Федеральное Казначейство)</p>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-2 mb-24">
+            <div class="services-box services-box-no">
+              <div class="services-box__icon"><img src="img/service6.png" alt=""></div>
+              <p>Скоро будет доступно</p>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-2 mb-24">
+            <div class="services-box">
+              <div class="services-box__icon"><img src="img/service5.png" alt=""></div>
+              <p>МТС, мобильная связь</p>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-2 mb-24">
+            <div class="services-box">
+              <div class="services-box__icon"><img src="img/service1.png" alt=""></div>
+              <p>ООО «Газпром Межрегионгаз»
+              </p>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-2 mb-24">
+            <div class="services-box">
+              <div class="services-box__icon"><img src="img/service2.png" alt=""></div>
+              <p>ОАО «Электросеть» г. о. Мытищи</p>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-2 mb-24">
+            <div class="services-box">
+              <div class="services-box__icon"><img src="img/service3.png" alt=""></div>
+              <p>Оплата штрафов ГИБДД </p>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-2 mb-24">
+            <div class="services-box">
+              <div class="services-box__icon"><img src="img/service4.png" alt=""></div>
+              <p>Налоги (Федеральное Казначейство)</p>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-2 mb-24">
+            <div class="services-box">
+              <div class="services-box__icon"><img src="img/service5.png" alt=""></div>
+              <p>МТС, мобильная связь</p>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-2 mb-24">
+            <div class="services-box">
+              <div class="services-box__icon"><img src="img/service5.png" alt=""></div>
+              <p>МТС, мобильная связь</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tab-pane fade" id="tab-pagination4" role="tabpanel"
+           aria-labelledby="nav-tab-pagination3">
+        <div class="row">
+          <div class="col-12 col-sm-6 col-md-4 col-lg-2 mb-24">
+            <div class="services-box">
+              <div class="services-box__icon"><img src="img/service1.png" alt=""></div>
+              <p>ООО «Газпром Межрегионгаз»
+              </p>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-2 mb-24">
+            <div class="services-box">
+              <div class="services-box__icon"><img src="img/service2.png" alt=""></div>
+              <p>ОАО «Электросеть» г. о. Мытищи</p>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-2 mb-24">
+            <div class="services-box">
+              <div class="services-box__icon"><img src="img/service3.png" alt=""></div>
+              <p>Оплата штрафов ГИБДД </p>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-2 mb-24">
+            <div class="services-box">
+              <div class="services-box__icon"><img src="img/service4.png" alt=""></div>
+              <p>Налоги (Федеральное Казначейство)</p>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-2 mb-24">
+            <div class="services-box services-box-no">
+              <div class="services-box__icon"><img src="img/service6.png" alt=""></div>
+              <p>Скоро будет доступно</p>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-2 mb-24">
+            <div class="services-box">
+              <div class="services-box__icon"><img src="img/service5.png" alt=""></div>
+              <p>МТС, мобильная связь</p>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-2 mb-24">
+            <div class="services-box">
+              <div class="services-box__icon"><img src="img/service1.png" alt=""></div>
+              <p>ООО «Газпром Межрегионгаз»
+              </p>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-2 mb-24">
+            <div class="services-box">
+              <div class="services-box__icon"><img src="img/service2.png" alt=""></div>
+              <p>ОАО «Электросеть» г. о. Мытищи</p>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-2 mb-24">
+            <div class="services-box">
+              <div class="services-box__icon"><img src="img/service3.png" alt=""></div>
+              <p>Оплата штрафов ГИБДД </p>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-2 mb-24">
+            <div class="services-box">
+              <div class="services-box__icon"><img src="img/service4.png" alt=""></div>
+              <p>Налоги (Федеральное Казначейство)</p>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-2 mb-24">
+            <div class="services-box">
+              <div class="services-box__icon"><img src="img/service5.png" alt=""></div>
+              <p>МТС, мобильная связь</p>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-2 mb-24">
+            <div class="services-box">
+              <div class="services-box__icon"><img src="img/service5.png" alt=""></div>
+              <p>МТС, мобильная связь</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12">
+        <ul class="nav nav-pills nav-tabs-pagination" role="tablist">
+          <li class="nav-item" role="presentation">
+            <a class="nav-link active" id="nav-tab-pagination1" data-toggle="pill" href="#tab-pagination1" role="tab"
+               aria-controls="tab-pagination1" aria-selected="true">
+              1
+            </a>
+          </li>
+          <li class="nav-item" role="presentation">
+            <a class="nav-link" id="nav-tab-pagination2" data-toggle="pill" href="#tab-pagination2" role="tab"
+               aria-controls="tab-pagination2" aria-selected="false">
+              2
+            </a>
+          </li>
+          <li class="nav-item" role="presentation">
+            <a class="nav-link" id="nav-tab-pagination3" data-toggle="pill" href="#tab-pagination3" role="tab"
+               aria-controls="tab-pagination3" aria-selected="false">
+              3
+            </a>
+          </li>
+          <li class="nav-item" role="presentation">
+            <a class="nav-link" id="nav-tab-pagination4" data-toggle="pill" href="#tab-pagination4" role="tab"
+               aria-controls="tab-pagination4" aria-selected="false">
+              4
+            </a>
+          </li>
+        </ul>
+        <!--        <nav class="nav-pagination">-->
+        <!--          <ul class="pagination">-->
+        <!--            <li class="page-item active" aria-current="page">-->
+        <!--              <span class="page-link">1</span>-->
+        <!--            </li>-->
+        <!--            <li class="page-item"><a class="page-link" href="#">2</a></li>-->
+        <!--            <li class="page-item"><a class="page-link" href="#">3</a></li>-->
+        <!--            <li class="page-item"><a class="page-link" href="#">4</a></li>-->
+        <!--          </ul>-->
+        <!--        </nav>-->
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-top">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-12 col-sm-6 col-lg-3">
+          <a href="index.html" class="logo">
+            <span class="logo-image"><img src="img/logo.svg" alt=""></span>
+            <span class="logo-text">
+            <span class="logo-title">EDolgi.ru</span>
+            <span class="logo-description">cервис электронных услуг </span>
+          </span>
+          </a>
+
+          <div class="description-company">
+            СЕРВИС УДОБНЫХ И БЫСТРЫХ ПЛАТЕЖЕЙ В ЖКХ, ФССП, ФНС, ГИБДД С ГАРАНТИЕЙ БЕЗОПАСНОСТИ.
+          </div>
+          <div class="application-links d-none d-sm-flex">
+            <a href="#" target="_blank" class="application-links__item"><img src="img/app-ios-black.svg" alt=""></a>
+            <a href="#" target="_blank" class="application-links__item"><img src="img/app-google-black.svg" alt=""></a>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="footer-box">
+            <div class="footer-box__title">НАВИГАЦИЯ</div>
+            <ul class="footer-menu my-ul">
+              <li><a href="#">О портале
+              </a></li>
+              <li><a href="#">Контакты
+              </a></li>
+              <li><a href="#">Ответы на частые вопросы
+              </a></li>
+              <li><a href="#">Предоставление API
+              </a></li>
+              <li><a href="#">Новости
+              </a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="footer-box">
+            <div class="footer-box__title">НАВИГАЦИЯ</div>
+            <ul class="footer-menu my-ul">
+              <li><a href="#">Задолженности по ФИО</a></li>
+              <li><a href="#">Штрафы ГИБДД </a></li>
+              <li><a href="#">Поиск налогов ФНС по ИНН</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="footer-box">
+            <div class="footer-box__title">контакты</div>
+            <div class="header-contacts">
+              <div class="header-contacts__icon">
+                <svg class="svg-icon">
+                  <use xlink:href="img/sprite.svg#phone"></use>
+                </svg>
+              </div>
+              <div class="header-contacts__text">
+                <a href="tel:+74951234567" class="phone">+7 (495) 123-45-67</a>
+                <span>время работы с 9:00 до 21:00</span>
+              </div>
+            </div>
+
+            <div class="header-contacts">
+              <div class="header-contacts__icon">
+                <svg class="svg-icon">
+                  <use xlink:href="img/sprite.svg#mail"></use>
+                </svg>
+              </div>
+              <div class="header-contacts__text">
+                <a href="mailto:support@edolgi.ru" target="_blank" class="phone">support@edolgi.ru</a>
+                <span>служба поддержки</span>
+              </div>
+            </div>
+
+            <div class="header-contacts">
+              <div class="header-contacts__icon">
+                <svg class="svg-icon">
+                  <use xlink:href="img/sprite.svg#tg"></use>
+                </svg>
+              </div>
+              <div class="header-contacts__text">
+                <a href="https://telegram.im/@support-edolgi.ru" target="_blank" class="phone">@support-edolgi.ru</a>
+                <span>наш телеграмм канал</span>
+              </div>
+            </div>
+            <ul class="list-social my-ul">
+              <li><a href="#">
+                <svg class="svg-icon">
+                  <use xlink:href="img/sprite.svg#ok"></use>
+                </svg>
+              </a></li>
+              <li><a href="#">
+                <svg class="svg-icon">
+                  <use xlink:href="img/sprite.svg#youtube"></use>
+                </svg>
+              </a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-12 d-block d-sm-none">
+          <div class="application-links">
+            <a href="#" target="_blank" class="application-links__item"><img src="img/app-ios-black.svg" alt=""></a>
+            <a href="#" target="_blank" class="application-links__item"><img src="img/app-google-black.svg" alt=""></a>
+          </div>
+        </div>
+
+        <div class="col-12">
+          <div class="footer-text">
+            <p>Информационный портал EDolgi.ru создан для проверки/поиска/оплаты задолженностей и авансовых платежей.
+              Данные пользователей обрабатываются исключительно по предварительному согласию (установка чек-бокса на
+              разрешение обработки персональных данных). Администарция EDolgi.ru не собирает и не хранит личные данные
+              пользователей. Расчеты по переводу денежных средств осуществляет ООО НКО «Перспектива» действует на
+              основании лицензии Центрального Банка Российской Федерации на осуществление банковских операций № 3532-К
+              от 21 июля 2015 года.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <ul class="menu-documents my-ul">
+            <li><a href="#">Информация об оплате</a></li>
+            <li><a href="#">Пользовательское соглашение</a></li>
+            <li><a href="#">Политика конфиденциальности</a></li>
+            <li><a href="#">HTTPS:// Защищенное соединения. SSL Sertificate.</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <a href="#" class="btn-scroll-top">
+    <svg class="svg-icon">
+      <use xlink:href="img/sprite.svg#arrow-top"></use>
+    </svg>
+  </a>
+</footer>
+
+
+<script src="js/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+<script src="js/common.js"></script>
+
+</body>
+
+</html>
