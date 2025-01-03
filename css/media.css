@@ -21,6 +21,10 @@
   .form-admin .form-group {
     margin-right: 20px;
   }
+
+  .bailiffs-wrapper {
+    padding: 32px 40px;
+  }
 }
 
 @media only screen and (max-width: 1200px) {
@@ -178,6 +182,10 @@
   .report-box {
     padding: 30px;
   }
+
+  .bailiffs-base {
+    padding: 32px 0;
+  }
 }
 
 /* Medium Devices, Desktops */
@@ -315,7 +323,7 @@
     padding: 60px 0 0;
   }
   h1,
-  .h1 {
+  .h1, .bailiffs h1 {
     font-size: 36px;
   }
   .application-image {
@@ -572,6 +580,15 @@
 	.stop-attention .box-text {
 		font-size: 16px;
 	}
+
+  .employee-photo {
+    margin: 0 0 24px;
+    height: 288px;
+  }
+
+  .employee-section__footer {
+    padding: 24px;
+  }
 }
 /* Small Devices, Tablets */
 @media only screen and (max-width: 860px) {
@@ -873,6 +890,21 @@
 		height: 202px;
 		overflow: hidden;
 	}
+
+  .bailiffs-wrapper {
+    padding: 32px 0;
+  }
+
+  .bailiffs-wrapper__footer {
+    margin: 30px 0 0;
+  }
+
+  .bailiffs-wrapper__footer .box-text {
+    max-width: none;
+    margin: 0 0 10px;
+    width: 100%;
+    order: -1;
+  }
 }
 
 /* Extra Small Devices, Phones */
@@ -1158,7 +1190,7 @@
   }
   .list-information-company__name {
     padding: 0;
-    margin: 0 0 5px;
+    margin: 0 auto 5px;
   }
   .btn-payments {
     width: 100%;
@@ -1199,9 +1231,6 @@
     text-align: center;
   }
 
-  .list-information-company__name {
-    margin: 0 auto 5px;
-  }
 
   .list-information-company a {
     margin: 0 auto;
@@ -1269,6 +1298,37 @@
   .header-report {
     padding: 20px 0;
   }
+
+  .bailiffs h1 {
+    font-size: 30px;
+  }
+
+  .bailiffs .list-information-company {
+    text-align: left;
+  }
+
+  .bailiffs .list-information-company__name {
+    margin: 0 0 5px;
+  }
+
+  .bailiffs .list-information-company a {
+    margin: 0;
+  }
+
+  .list-anchor {
+    width: 100%;
+    margin: 10px 0 0;
+  }
+  .list-anchor a {
+    margin: 0 10px 5px 0;
+  }
+
+  .bailiffs-wrapper h3 {
+    font-size: 18px;
+    margin: 40px 0 20px; 
+  }
+
+  .employee-photo {height: 200px;}
 }
 @media only screen and (max-width: 480px) {
   h1,

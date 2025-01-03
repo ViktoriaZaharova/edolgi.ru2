@@ -2443,6 +2443,7 @@
 .list-information-company a {
   text-decoration: underline;
   color: #2563eb;
+  display: inline;
 }
 
 .list-information-company a:hover {
@@ -3693,9 +3694,11 @@ input#autopayment-day {
 }
 
 /* bailiff */
-.table td, .table th {
+.table td,
+.table th {
   padding: 16px 8px;
 }
+
 .bailiffs h1 {
   font-size: 40px;
 }
@@ -3703,6 +3706,32 @@ input#autopayment-day {
 .bailiffs-wrapper {
   width: 100%;
   padding: 32px 64px;
+}
+
+.bailiffs-wrapper h3 {
+  font-weight: 600;
+  font-size: 22px;
+  margin: 33px 0 24px;
+  width: 100%;
+}
+
+.bailiffs-wrapper__footer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 40px 0 0;
+}
+
+.bailiffs-wrapper__footer .box-text {
+  margin: 0 0 0 24px;
+  max-width: 428px;
+  font-size: 14px;
+  color: #4B5563
+}
+
+.bailiffs-base {
+  padding: 32px 0; 
 }
 
 .bailiffs-base .search-base-wrapper h2 {
@@ -3723,7 +3752,7 @@ input#autopayment-day {
 }
 
 .district-branches {
-  margin: 32px 0 0;
+  padding: 32px 0 0;
 }
 
 .district-branches-wrapper {
@@ -3745,20 +3774,31 @@ input#autopayment-day {
   width: 100%;
 }
 
+.all-regiones {
+  margin: 0 0 32px;
+}
+
 .list-anchor {
   display: flex;
   align-items: flex-start;
-text-transform: uppercase;
+  flex-wrap: wrap;
+  text-transform: uppercase;
+  margin: 0 0 0 16px;
 }
 
 .list-anchor a {
-  margin: 0 0 0 16px;
+  margin: 0 16px 0 0;
   text-transform: uppercase;
   text-decoration: underline;
   color: #2563EB;
 }
 
-.list-anchor a:hover, .list-anchor a:focus {
+.list-anchor a:last-child {
+  margin: 0;
+}
+
+.list-anchor a:hover,
+.list-anchor a:focus {
   color: #000;
 }
 
@@ -3768,11 +3808,11 @@ text-transform: uppercase;
 }
 
 .district-branches-box .h3 {
-font-size: 28px;
-font-weight: 600;
-color: #2563EB;
-margin: 0;
-text-transform: uppercase;
+  font-size: 28px;
+  font-weight: 600;
+  color: #2563EB;
+  margin: 0;
+  text-transform: uppercase;
 }
 
 .district-branches-box__head {
@@ -3792,10 +3832,44 @@ text-transform: uppercase;
   margin: 0;
 }
 
-.district-branches-list a:hover, .district-branches-list a:focus {
+.district-branches-list a:hover,
+.district-branches-list a:focus {
   color: #2563EB;
 }
 
 .load-more-wrap {
   margin: 10px 0 0;
+}
+
+.employee-section h1 {
+  margin: 0 0 40px;
+}
+
+.employee-section .list-information-company {
+  margin: 0;
+}
+
+.employee-photo {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  background: #EFF6FF;
+}
+
+.employee-photo__icon {
+  width: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.employee-section__footer {
+  padding: 40px 64px;
+  background: #DBEAFE;
+}
+
+.employee-section__footer .box-text {
+  color: #6B7280;
 }
